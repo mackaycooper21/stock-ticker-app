@@ -1,0 +1,2352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPCX // SpaceX Stock Mission Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://r.jina.ai">
+<link rel="preconnect" href="https://api.allorigins.win">
+<link rel="preconnect" href="https://api.codetabs.com">
+<link rel="preconnect" href="https://corsproxy.io">
+<link rel="dns-prefetch" href="https://query1.finance.yahoo.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="chart.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="rail">
+    <div class="rail-track">
+      <span>SPCX <span class="down">115.26 −6.70%</span></span>
+      <span>52W RANGE 115.19 – 225.64</span>
+      <span>IPO PRICE 135.00 · JUN 12 2026</span>
+      <span>SEGMENTS SPACE · CONNECTIVITY · AI</span>
+      <span>NEXT CATALYST FIRST EARNINGS REPORT</span>
+      <span>SHORT INTEREST ≈32% OF FLOAT</span>
+      <span>SPCX <span class="down">115.26 −6.70%</span></span>
+      <span>52W RANGE 115.19 – 225.64</span>
+      <span>IPO PRICE 135.00 · JUN 12 2026</span>
+      <span>SEGMENTS SPACE · CONNECTIVITY · AI</span>
+      <span>NEXT CATALYST FIRST EARNINGS REPORT</span>
+      <span>SHORT INTEREST ≈32% OF FLOAT</span>
+    </div>
+  </div>
+
+  <header>
+    <div class="wrap header-row">
+      <div class="brand"><span class="dot"></span> MISSION BOARD <span id="brand-ticker">// MARKETS</span></div>
+      <nav>
+        <a href="#overview">Overview</a>
+        <a href="#deepdive-switcher">Select company</a>
+        <a href="#compare">Compare tickers</a>
+        <a href="#briefing">Research briefing</a>
+        <a href="#chart">Live chart</a>
+        <a href="#peers">Peers</a>
+        <a href="#watchlist">Watchlist</a>
+        <a href="#alerts">Alerts</a>
+        <a href="#paper">Paper trading</a>
+        <a href="#snapshot">Daily snapshot</a>
+        <a href="#patterns">Patterns</a>
+        <a href="#segments">Business</a>
+        <a href="#timeline">Valuation history</a>
+        <a href="#catalysts">Catalysts</a>
+        <a href="#analysts">Analyst views</a>
+        <a href="#news">News</a>
+        <a href="#ownership">Ownership</a>
+        <a href="#risks">Risks</a>
+        <a href="#strategy">Buy/sell framework</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="overview" style="border-top:none;">
+    <div class="wrap">
+      <div class="eyebrow"><span id="hero-exchange">Nasdaq · SPCX · Space Exploration Technologies Corp.</span> <span id="today-date" class="today-date"></span></div>
+      <div class="hero-grid">
+        <div>
+          <h1 id="hero-h1">Track any stock.<br>Understand what<br>you actually <span class="accent">own</span>.</h1>
+          <p class="hero-sub" id="hero-sub">Pick a company below — SpaceX, Tesla, Apple, Microsoft, Alphabet, Amazon, Meta, or Nvidia — to see its live price, real research, and risks laid out in plain English. Or compare several side by side. Nothing here is a recommendation — just the facts, before you decide anything.</p>
+        </div>
+
+        <div class="price-panel">
+          <div class="ticker-label">
+            <span>NASDAQ: SPCX</span>
+            <span>USD</span>
+          </div>
+          <div class="price-main">
+            <span id="hero-price">$115.26</span>
+            <span class="price-change down" id="hero-change">▼ 8.28 (−6.70%)</span>
+          </div>
+          <div class="price-meta" id="hero-meta">After-hours: $115.98 (+0.63%) · Prev. close $123.54 (source-dependent, see note below)</div>
+
+          <div class="stat-strip">
+            <div class="stat-cell"><div class="k">Open</div><div class="v" id="hero-open">123.29</div></div>
+            <div class="stat-cell"><div class="k">Day High</div><div class="v" id="hero-dayhigh">124.77</div></div>
+            <div class="stat-cell"><div class="k">Day Low</div><div class="v" id="hero-daylow">115.19</div></div>
+            <div class="stat-cell"><div class="k">52W Low</div><div class="v" id="hero-52wlow">115.19</div></div>
+            <div class="stat-cell"><div class="k">52W High</div><div class="v" id="hero-52whigh">225.64</div></div>
+            <div class="stat-cell" data-deepdive="SPCX"><div class="k">IPO Price</div><div class="v">135.00</div></div>
+            <div class="stat-cell" data-deepdive="SPCX"><div class="k">IPO Date</div><div class="v">Jun 12 '26</div></div>
+            <div class="stat-cell"><div class="k">Exchange</div><div class="v">NASDAQ</div></div>
+          </div>
+          <div class="as-of" id="hero-asof">Snapshot ≈ July 22, 2026 close, compiled from public quote sources · quotes vary slightly by provider and delay — check a live broker feed before trading.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="deepdive-switcher" style="padding-bottom:0; border-top:none;">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Choose a company</h2>
+        <span class="tag">Everything below follows your pick</span>
+      </div>
+      <div class="dd-tabs" id="dd-tabs">
+        <button class="dd-tab active" data-dd="SPCX">SpaceX <span>SPCX</span></button>
+        <button class="dd-tab" data-dd="TSLA">Tesla <span>TSLA</span></button>
+        <button class="dd-tab" data-dd="AAPL">Apple <span>AAPL</span></button>
+        <button class="dd-tab" data-dd="MSFT">Microsoft <span>MSFT</span></button>
+        <button class="dd-tab" data-dd="GOOGL">Alphabet <span>GOOGL</span></button>
+        <button class="dd-tab" data-dd="AMZN">Amazon <span>AMZN</span></button>
+        <button class="dd-tab" data-dd="META">Meta <span>META</span></button>
+        <button class="dd-tab" data-dd="NVDA">Nvidia <span>NVDA</span></button>
+      </div>
+      <p class="chart-note" style="margin-top:14px;">This drives the whole page — the live chart, price, news, peers, and the full written research all switch to match your pick. The written research (segments, catalysts, analyst views, scenario timelines) is current as of <b>July 30, 2026</b> and doesn't update automatically; ask Claude to refresh a company whenever you want it brought current. Want to look at more than one at once? Use <a href="#compare" style="color:var(--starlink);">Compare tickers</a> just below.</p>
+    </div>
+  </section>
+
+  <section id="compare">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Compare tickers</h2>
+        <span class="tag">% change, normalized</span>
+      </div>
+      <div class="wl-add-row">
+        <input type="text" id="compare-input" placeholder="Add a ticker to compare" autocomplete="off" spellcheck="false" maxlength="10">
+        <button id="compare-add-btn" class="range-btn">Add to chart</button>
+        <div class="compare-chips" id="compare-chips"></div>
+      </div>
+      <div class="chart-panel">
+        <canvas id="compareChart" height="100"></canvas>
+        <div class="chart-note" style="margin-top:16px;">
+          Shows percentage change from each ticker's price when added — not raw dollar price — so stocks at very different price levels can be compared fairly on one chart. SPCX is always included by default.
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="briefing">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Research briefing</h2>
+        <span class="tag">Deep research · point-in-time snapshot</span>
+      </div>
+      <div class="briefing-meta">
+        <span>Generated via deep research · July 24, 2026</span>
+        <span>261 sources reviewed</span>
+        <span>SPCX · Space Exploration Technologies Corp.</span>
+      </div>
+
+      <div class="briefing-tldr">
+        <div class="lbl">TL;DR</div>
+        <ul>
+          <li>SPCX trades near its all-time low (~<span class="stat">$110.85–$118</span>, down ~48% from its June 16 high of $225.64 and below its $135 IPO price) heading into a rare "double catalyst" on <b>Aug 4</b> (first earnings) and <b>Aug 6</b> (a ~$109–116B insider lockup unlock). Technicals are deeply oversold (RSI ~24–33, "Strong Sell" signals) while the analyst consensus remains bullish (~$240 average target), producing one of the widest bull/bear dispersions on the market ($30–$62 bears vs. $800–$900 bulls).</li>
+          <li>The dominant professional framing is <b>"wait-and-see"</b>: most independent commentators argue the Aug 4 earnings + Aug 6 supply overhang should be allowed to resolve before committing, because they resolve fundamental uncertainty and the float-expansion overhang simultaneously. Dollar-cost-averaging (ARK's approach) and technical-level trading are the other two active frameworks.</li>
+          <li>The core tension: the stock trades at an extreme ~85–112x sales / P/B ~65x with negative free cash flow (~-$12.5B to -$20B), which value-focused analysts (Morningstar $62, MoffettNathanson $131, CFRA $115) say is unjustifiable, versus growth bulls (Morgan Stanley $300, Raymond James $800) who price in AI/Starlink/Starship optionality that "nobody really knows."</li>
+        </ul>
+      </div>
+
+      <div class="briefing-content">
+        <h3>Key Findings</h3>
+
+        <h4>Price action</h4>
+        <p>After pricing at $135 (June 11) and closing its first day at $160.95 (+19%, June 12), SPCX ran to an all-time high of $225.64 on June 16, then reversed into a sustained downtrend, hitting an all-time low of $110.85 on July 23, 2026. As of the July 23 close it was ~$118, down roughly 48% from its peak and below both the $135 IPO price and the $150 first-trade price. The public float is unusually thin (~555.6M shares floated, roughly 4–5% of ~13.08B shares outstanding).</p>
+
+        <h4>Technical setup</h4>
+        <p>Deeply oversold and technically weak across services. Investing.com: 14-day RSI ~24.3 (oversold), MACD -4.09, 5-day MA $122.10, 50-day MA $135.02, daily signal "Strong Sell" (9 sell / 3 buy on moving averages). TipRanks: technical rating "Sell"/"Strong Sell." ChartMill: technical rating 3/10 ("bad"), resistance zone $136.07–$136.09, no clean support detected, advises waiting for consolidation. The stock trades below its 5/20/50-day SMAs. On the other side, the stock sits in the lower third of its 52-week range, and a breakout above its 50-day moving average (~$158) would be a notable technical shift if it happens. Support zones flagged in the $120–$130 area, with RSI in oversold territory — which can precede a bounce, but can also just persist in a confirmed downtrend.</p>
+
+        <h4>Analyst coverage &amp; price targets</h4>
+        <p>After the IPO quiet period expired, ~15 firms initiated on July 7, all buy-equivalent except one. Consensus is "Strong Buy," average target ~$240 (range $62–$800).</p>
+        <ul>
+          <li><b>Underwriter banks:</b> Morgan Stanley/Adam Jonas OW $300 (bull $600, bear $75); Goldman Sachs/Eric Sheridan Buy $205; JPMorgan/Doug Anmuth $225; BofA $235; Citi/John Godyn Buy $200 (bull case $900); Wells Fargo OW $230.</li>
+          <li><b>Independent:</b> Oppenheimer/Timothy Horan Outperform $190 (first outside-syndicate rating); Evercore ISI/Kutgun Maral Outperform $230; Bernstein/Douglas Harned Outperform $239; Deutsche Bank/Edison Yu Buy $255; Needham/Ryan Koontz Buy $250; UBS Buy $210; Raymond James/Brian Gesuale Strong Buy $800.</li>
+          <li><b>Bears:</b> MoffettNathanson/Julie Zhu Neutral $131 (only sell-side firm forecasting a decline); CFRA/Keith Snyder Sell $115; Morningstar/Nicolas Owens fair value $62 (probability-weighted DCF).</li>
+        </ul>
+
+        <h4>Upcoming catalysts calendar</h4>
+        <ul>
+          <li><b>Aug 4, 2026:</b> First earnings report as a public company, after market close. Focus: Starlink profitability/margins, Falcon 9 cash flow, AI capex, guidance.</li>
+          <li><b>Aug 6, 2026:</b> First lockup tranche — ~20% of eligible insider/employee shares (~911.5M shares, worth ~$109–116B) become saleable, exceeding the ~$86B of currently-floating shares.</li>
+          <li><b>Conditional 10% tranche</b> (~$62B): unlocks only if SPCX trades ≥$175.50 for 5 of the 10 trading days into earnings — currently unlikely at ~$115.</li>
+          <li><b>~Aug 21, ~Sept 10:</b> further 7% tranche unlocks. <b>Q3 earnings-triggered release (~28%)</b>, then full lockup expiry Dec 8, 2026.</li>
+          <li><b>Elon Musk's ~6.4B shares:</b> locked 366 days, until June 12, 2027.</li>
+          <li><b>Starship Flight 13:</b> after a July 16 T-0 abort and July 23 weather delay; first V3 Starlink satellite deployment.</li>
+          <li><b>Index flows:</b> Fast-tracked into Nasdaq-100 on July 7 (~$4.3B est. passive inflows).</li>
+        </ul>
+
+        <h4>Options positioning</h4>
+        <p>Implied volatility is extreme — ATM IV ~93–96%, IV percentile ~92%. Dealers are in a <b>negative-gamma regime</b>, meaning hedging amplifies moves rather than dampening them. Key levels: call wall ~$150 (resistance), put wall ~$110 (support), gamma flip ~$158 (stock is far below it). Put/call ratio ~1.11, a bearish tilt vs. the ~0.81 typical baseline.</p>
+
+        <h4>Short interest &amp; institutional activity</h4>
+        <p>Short interest estimated at ~206M shares (~32% of tradable float, ~$25B notional) as of July 21, up sharply from ~40M earlier in July. S3 Partners characterized it as "normal price discovery rather than a classic short-squeeze candidate" — borrow fee low, ample shares available. ARK Invest (Cathie Wood) has been an aggressive dip-buyer, with total post-IPO buying reported at &gt;$475M across its ETFs. At least six members of Congress disclosed post-IPO purchases.</p>
+
+        <h4>Valuation context</h4>
+        <p>Per SpaceX's S-1: 2025 consolidated revenue $18.67B (+33% YoY), a $4.9B GAAP net loss. Starlink generated $11.4B (61% of revenue) with a 39% operating margin, up 86% YoY. Multiples are extreme: price/sales ~85–112x, price/book ~65x. Simply Wall St flags "less than 1 year of cash runway" on a free-cash-flow basis as a major risk. Valuation dispersion is stark — Morningstar's $62 DCF implies the stock is ~150%+ overvalued at ~$800B, while Simply Wall St's own DCF suggests it's undervalued (~$238 fair value).</p>
+
+        <h3>Strategic Timing Frameworks</h3>
+        <p>Three schools of thought are active among professional and independent commentators right now:</p>
+        <ul>
+          <li><b>Wait-and-see (most common):</b> Let the Aug 4 earnings and Aug 6 lockup resolve both fundamental uncertainty and the supply overhang before committing, since they land two days apart.</li>
+          <li><b>Dollar-cost-averaging (ARK's approach):</b> Treat the ~48% drawdown as a long-horizon entry, buying in tranches through volatility on a decade-plus thesis.</li>
+          <li><b>Technical-level / event trading:</b> Watch $110 (recent low/put wall) as near-term support and $135–158 (IPO price through gamma flip) as resistance zones.</li>
+        </ul>
+
+        <h4>Bull case</h4>
+        <p>Near-monopoly launch economics — SpaceX launched more than 80% of total global mass-to-orbit in 2025 — Starlink scaling with a 39% segment operating margin, optionality on Starship and space/terrestrial AI compute, mechanical index-fund demand, and a consensus target far above the current price.</p>
+
+        <h4>Bear case</h4>
+        <p>No profits, ~85–112x sales, under a year of cash runway on free cash flow, a ~$109B+ supply overhang arriving within two weeks, 32% short interest, and a valuation several independent analysts argue is untethered from traditional corporate finance metrics.</p>
+
+        <h3>Caveats</h3>
+        <ul>
+          <li>SPCX has under 7 weeks of trading history — most technical/valuation signals are statistically unreliable on such a short sample.</li>
+          <li>Options analytics (max pain, walls, gamma exposure) are end-of-day and shift daily; figures here may already be stale by the time you're reading this.</li>
+          <li>Several source claims (e.g., merger speculation, specific squeeze targets) are speculation from secondary outlets, not confirmed fact, and were treated skeptically in compiling this briefing.</li>
+          <li>This briefing is informational only and is not a recommendation to buy, hold, or sell any security.</li>
+        </ul>
+      </div>
+
+      <div class="briefing-refresh">
+        <span>📌</span>
+        <span>This briefing is a snapshot from the date shown above — it does not update on its own. Ask me in chat to "re-run the SPCX research" whenever you want a refreshed version with current numbers, and I'll rebuild this section.</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="chart">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Live price chart</h2>
+        <span class="tag" id="chart-status-tag">SPCX · connecting…</span>
+      </div>
+
+      <div class="ticker-search-bar">
+        <div class="ticker-search-label">Look up any ticker</div>
+        <input type="text" id="ticker-search-input" placeholder="e.g. AAPL, TSLA, RKLB…" autocomplete="off" spellcheck="false" maxlength="10">
+        <button id="ticker-search-btn" class="range-btn">Load</button>
+        <button id="ticker-reset-btn" class="range-btn" style="display:none;">Back to SPCX</button>
+        <span class="ticker-search-note">Updates the chart, price, profile and peers below — the rest of the page stays SpaceX-specific research.</span>
+      </div>
+
+      <div class="ticker-profile" id="ticker-profile" style="display:none;"></div>
+
+      <div class="key-banner" id="key-banner" style="display:none;">
+        <div class="key-banner-text">
+          <b>For the most reliable live data:</b> paste a free Finnhub API key (30 seconds, no card — get one at <b>finnhub.io/register</b>). This connects directly with no proxy in the middle, so it works even on locked-down networks. Without a key, the chart still works using free public relays as a fallback, and ticker search is limited to SPCX only.
+        </div>
+        <div class="key-banner-input">
+          <input type="text" id="finnhub-key-input" placeholder="paste Finnhub key here" autocomplete="off" spellcheck="false">
+          <button id="finnhub-key-save" class="range-btn">Connect</button>
+        </div>
+      </div>
+
+      <div class="chart-panel">
+        <div class="chart-toolbar">
+          <div class="range-buttons" id="range-buttons">
+            <button class="range-btn active" data-range="1d" data-interval="15m">1D</button>
+            <button class="range-btn" data-range="5d" data-interval="1h">5D</button>
+            <button class="range-btn" data-range="1mo" data-interval="1d">1M</button>
+            <button class="range-btn" data-range="6mo" data-interval="1d">6M</button>
+            <button class="range-btn" data-range="1y" data-interval="1wk">1Y</button>
+          </div>
+          <div class="chart-live">
+            <span class="dot" id="live-dot"></span>
+            <span id="live-price">$—.—</span>
+            <span class="price-change" id="live-change" style="font-size:13px;"></span>
+          </div>
+        </div>
+        <canvas id="priceChart" height="110"></canvas>
+        <div class="chart-foot">
+          <span id="chart-updated">Loading…</span>
+          <span id="chart-source">Source: Yahoo Finance public quote endpoint</span>
+        </div>
+        <div class="chart-note" id="chart-note">
+          No account or API key needed. This chart fetches quote history client-side, in your browser, from Yahoo Finance's public quote endpoint — routed through free, keyless CORS relays (and your local proxy, if it's running) since Yahoo doesn't allow direct browser calls. It refreshes automatically about once an hour. If all sources are down or you're offline, the chart falls back to a clearly-labeled <b>simulated</b> line so it's never ambiguous what's real. Data is exchange-delayed, not tick-by-tick — confirm against your broker before trading.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="peers">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>How it stacks up right now</h2>
+        <span class="tag" id="peers-status">Live peer quotes</span>
+      </div>
+      <div class="peers-grid" id="peers-grid">
+        <div class="peer-card" data-symbol="RKLB">
+          <div class="peer-name">Rocket Lab <span class="peer-ticker">RKLB</span></div>
+          <div class="peer-price">$—.—</div>
+          <div class="peer-change">—</div>
+          <div class="peer-desc">Closest pure-play launch competitor — smaller rockets, growing fast.</div>
+        </div>
+        <div class="peer-card" data-symbol="BA">
+          <div class="peer-name">Boeing <span class="peer-ticker">BA</span></div>
+          <div class="peer-price">$—.—</div>
+          <div class="peer-change">—</div>
+          <div class="peer-desc">Legacy aerospace prime — commercial planes plus defense and space contracts.</div>
+        </div>
+        <div class="peer-card" data-symbol="LMT">
+          <div class="peer-name">Lockheed Martin <span class="peer-ticker">LMT</span></div>
+          <div class="peer-price">$—.—</div>
+          <div class="peer-change">—</div>
+          <div class="peer-desc">Defense &amp; space contractor — steadier, government-contract-driven revenue.</div>
+        </div>
+        <div class="peer-card" data-symbol="^GSPC">
+          <div class="peer-name">S&amp;P 500 <span class="peer-ticker">SPX</span></div>
+          <div class="peer-price">$—.—</div>
+          <div class="peer-change">—</div>
+          <div class="peer-desc">Broad market, for context on whether SPCX is moving with or against the tide.</div>
+        </div>
+      </div>
+      <div class="chart-note" style="margin-top:16px;">Quotes refresh on the same hourly cycle as the chart above.</div>
+    </div>
+  </section>
+
+  <section id="watchlist">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Your watchlist</h2>
+        <span class="tag">Saved in this browser only</span>
+      </div>
+      <div class="wl-add-row">
+        <input type="text" id="wl-input" placeholder="Add a ticker, e.g. AAPL" autocomplete="off" spellcheck="false" maxlength="10">
+        <button id="wl-add-btn" class="range-btn">Add to watchlist</button>
+      </div>
+      <div class="watchlist-grid" id="watchlist-grid">
+        <div class="wl-empty" id="wl-empty">Nothing here yet — add a ticker above to start tracking it.</div>
+      </div>
+      <div class="chart-note" style="margin-top:16px;">
+        Saved locally in this browser (not shared across devices or with other visitors). Refreshes on the same hourly cycle as the peer quotes.
+      </div>
+    </div>
+  </section>
+
+
+  <section id="alerts">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Price alerts</h2>
+        <span class="tag" id="alerts-perm-status">Browser notifications</span>
+      </div>
+      <div class="alert-add-row">
+        <input type="text" id="alert-ticker" placeholder="Ticker" autocomplete="off" spellcheck="false" maxlength="10">
+        <select id="alert-direction">
+          <option value="above">rises above</option>
+          <option value="below">falls below</option>
+        </select>
+        <input type="number" id="alert-price" placeholder="Target price" step="0.01" min="0">
+        <button id="alert-add-btn" class="range-btn">Set alert</button>
+      </div>
+      <div class="alerts-list" id="alerts-list">
+        <div class="wl-empty" id="alerts-empty">No active alerts.</div>
+      </div>
+      <div class="chart-note" style="margin-top:16px;">
+        Alerts are checked every ~3 seconds while this tab is open and fire a browser notification the moment a price crosses your target — they don't work while the tab/browser is closed, since there's no server tracking them for you. First alert will ask for notification permission.
+      </div>
+    </div>
+  </section>
+
+  <section id="paper">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Paper trading</h2>
+        <span class="tag">Hypothetical — no real money</span>
+      </div>
+      <div class="paper-summary" id="paper-summary">
+        <div class="paper-stat"><div class="k">Cash</div><div class="v" id="paper-cash">$—</div></div>
+        <div class="paper-stat"><div class="k">Holdings value</div><div class="v" id="paper-holdings-value">$—</div></div>
+        <div class="paper-stat"><div class="k">Total portfolio</div><div class="v" id="paper-total">$—</div></div>
+        <div class="paper-stat"><div class="k">All-time P&amp;L</div><div class="v" id="paper-pnl">$—</div></div>
+      </div>
+      <div class="trade-row">
+        <input type="text" id="trade-ticker" placeholder="Ticker" autocomplete="off" spellcheck="false" maxlength="10" value="SPCX">
+        <input type="number" id="trade-shares" placeholder="Shares" min="0" step="0.0001">
+        <button id="trade-buy-btn" class="range-btn buy">Buy</button>
+        <button id="trade-sell-btn" class="range-btn sell">Sell</button>
+        <button id="trade-reset-btn" class="range-btn">Reset account</button>
+      </div>
+      <div class="holdings-table-wrap">
+        <table class="holdings-table" id="holdings-table">
+          <thead><tr><th>Ticker</th><th>Shares</th><th>Avg. cost</th><th>Current price</th><th>Value</th><th>P&amp;L</th></tr></thead>
+          <tbody id="holdings-tbody"><tr><td colspan="6" class="wl-empty">No holdings yet — buy something above.</td></tr></tbody>
+        </table>
+      </div>
+      <div class="chart-note" style="margin-top:16px;">
+        Starts with $10,000 in hypothetical cash, saved locally in this browser. Trades execute at the current live price. This is purely for practice/education — no real money is ever involved, and nothing here is connected to an actual brokerage.
+      </div>
+    </div>
+  </section>
+
+  <section id="snapshot">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Daily snapshot</h2>
+        <span class="tag" id="snapshot-status">Live, not a signal</span>
+      </div>
+      <div class="snapshot-grid" id="snapshot-grid">
+        <div class="snap-card">
+          <div class="k">Today's move</div>
+          <div class="v" id="snap-change">—</div>
+          <div class="sub" id="snap-change-sub">—</div>
+        </div>
+        <div class="snap-card">
+          <div class="k">Day range</div>
+          <div class="v" id="snap-range">—</div>
+          <div class="sub">Today's high / low so far</div>
+        </div>
+        <div class="snap-card">
+          <div class="k">vs. avg analyst target</div>
+          <div class="v" id="snap-target">—</div>
+          <div class="sub" id="snap-target-sub">—</div>
+        </div>
+        <div class="snap-card">
+          <div class="k">Next known catalyst</div>
+          <div class="v" id="snap-catalyst">—</div>
+          <div class="sub" id="snap-catalyst-sub">—</div>
+        </div>
+      </div>
+      <div class="chart-note" style="margin-top:16px;">
+        This is a factual snapshot — today's real numbers compared to yesterday and to known reference points — not a buy/sell signal. The "vs. analyst target" figure only applies to SPCX's own researched consensus; it's hidden for other tickers since we don't have that data for every company. Refreshes automatically alongside the live chart above.
+      </div>
+    </div>
+  </section>
+
+  <section id="patterns">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Patterns &amp; historical context</h2>
+        <span class="tag">Statistical tendencies, not predictions</span>
+      </div>
+      <p style="color:var(--text-dim); font-size:14px; max-width:74ch; margin-bottom:26px;">
+        This stock has only traded for a few weeks — nowhere near enough history to derive statistically meaningful patterns specific to it. What's below instead: real technical readings calculated live from the actual price data on this page, shown next to how similar conditions have historically tended to play out across the broader market in academic and industry research. These are probabilistic tendencies with real exceptions, not rules — and none of it is a signal to act on.
+      </p>
+
+      <div class="pattern-grid" id="pattern-grid">
+        <div class="pattern-card">
+          <div class="k">RSI (14-period)</div>
+          <div class="v" id="pat-rsi">—</div>
+          <div class="sub" id="pat-rsi-sub">Calculating from live price data…</div>
+        </div>
+        <div class="pattern-card">
+          <div class="k">Distance from 20-period average</div>
+          <div class="v" id="pat-sma">—</div>
+          <div class="sub" id="pat-sma-sub">—</div>
+        </div>
+        <div class="pattern-card">
+          <div class="k">Recent volatility</div>
+          <div class="v" id="pat-vol">—</div>
+          <div class="sub" id="pat-vol-sub">Standard deviation of recent price changes</div>
+        </div>
+        <div class="pattern-card">
+          <div class="k">MACD (12,26,9)</div>
+          <div class="v" id="pat-macd">—</div>
+          <div class="sub" id="pat-macd-sub">Moving average convergence/divergence</div>
+        </div>
+        <div class="pattern-card">
+          <div class="k">Bollinger Bands (20, 2σ)</div>
+          <div class="v" id="pat-bb">—</div>
+          <div class="sub" id="pat-bb-sub">Where price sits within its recent volatility band</div>
+        </div>
+      </div>
+
+      <div class="volume-chart-wrap">
+        <div class="volume-chart-label">Volume (from today's seeded history)</div>
+        <canvas id="volumeChart" height="60"></canvas>
+      </div>
+
+      <div class="section-head" style="margin: 30px 0 16px;">
+        <h2 style="font-size: 20px;">What the research actually says</h2>
+      </div>
+      <div class="research-list">
+        <div class="research-item">
+          <div class="ri-title">Oversold conditions (RSI below 30) — historically mean-revert more often than not</div>
+          <div class="ri-body">Academic and industry research on the Relative Strength Index generally finds a mean-reversion bias at extreme readings: when RSI falls into oversold territory, short-term bounces occur more frequently than continued declines, across broad historical samples. This is a statistical tendency, not a guarantee — <b>strong, sustained downtrends can keep RSI oversold for extended periods</b> without a meaningful bounce, which is exactly the scenario several technical services flagged for SPCX in mid-to-late July.</div>
+          <div class="ri-source">General technical analysis research (Wilder, 1978 methodology; widely replicated in industry backtests)</div>
+        </div>
+        <div class="research-item">
+          <div class="ri-title">IPO lockup expirations — consistently associated with negative abnormal returns</div>
+          <div class="ri-body">This is the best-established finding directly relevant to SPCX's Aug 6 lockup date. Multiple peer-reviewed studies dating back over two decades — starting with Field &amp; Hanka (2001) and replicated across different markets and time periods since — find that stock prices experience statistically significant negative abnormal returns around lockup expiration dates, even though the date is public knowledge well in advance. One widely-cited estimate puts the average abnormal return at roughly <b>-2%</b> around the expiration window, with larger effects for venture-backed companies. The effect is attributed to the simple mechanics of a sudden increase in tradable supply, not to any new information about the company.</div>
+          <div class="ri-source">Field &amp; Hanka (2001), "The Expiration of IPO Share Lockups," Journal of Finance; multiple follow-up studies since</div>
+        </div>
+        <div class="research-item">
+          <div class="ri-title">Index inclusion — a real, mechanical, usually short-lived price effect</div>
+          <div class="ri-body">When a stock is added to a major index (as SPCX was to the Nasdaq-100 on July 7, 2026), funds that track that index are structurally required to buy shares regardless of their own view on valuation. This tends to create a real, measurable demand spike around the inclusion date — but it's mechanical buying, not a fundamental endorsement, and research generally finds the effect fades once the rebalancing flows are complete.</div>
+          <div class="ri-source">Widely documented "index effect" literature in academic finance since the 1980s</div>
+        </div>
+      </div>
+
+      <div class="chart-note" style="margin-top:24px;">
+        The live readings above update as new price data comes in. Early in a session (or right after switching tickers) there may not be enough data points yet for a reliable RSI calculation — it needs at least 15 data points to compute.
+      </div>
+    </div>
+  </section>
+
+
+  <section id="segments">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What you actually own</h2>
+        <span class="tag">Three businesses, one ticker</span>
+      </div>
+      <div class="segments" data-deepdive="SPCX">
+        <div class="seg-card space">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#ff6a3d" stroke-width="1.6"><path d="M12 2c2.5 3 4 7 4 11.5C16 17 14 20 12 22c-2-2-4-5-4-8.5C8 9 9.5 5 12 2Z"/><circle cx="12" cy="10" r="1.6"/><path d="M8 15l-3.5 3.5M16 15l3.5 3.5M8 18l-2 3M16 18l2 3"/></svg>
+          <h3>Space</h3>
+          <p>Falcon 9, Falcon Heavy, and Starship — launch services for commercial and government payloads, plus crew and cargo missions. SpaceX flies more orbital launches per year than any other provider on Earth.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">Largest revenue segment, historically</div>
+        </div>
+        <div class="seg-card conn">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#4d9fff" stroke-width="1.6"><path d="M4 16a12 12 0 0 1 16 0M7 19a8 8 0 0 1 10 0M2 13a16 16 0 0 1 20 0"/><circle cx="12" cy="21" r="1.4" fill="#4d9fff" stroke="none"/></svg>
+          <h3>Connectivity</h3>
+          <p>Starlink's satellite broadband constellation, now serving customers across the US, Ireland, Canada, and dozens of other countries. The fastest-growing segment and the one most directly tied to recurring, subscription-like revenue.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">Fastest-growing segment</div>
+        </div>
+        <div class="seg-card ai">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#35d68f" stroke-width="1.6"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 9h.01M15 9h.01M9 15h6M2 9h3M2 15h3M19 9h3M19 15h3M9 2v3M15 2v3M9 19v3M15 19v3"/></svg>
+          <h3>Artificial intelligence</h3>
+          <p>Added in February 2026 when SpaceX acquired xAI in an all-stock deal — bringing the Grok model, the X platform, and AI compute infrastructure under the same roof as the rockets and satellites.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">Newest, most speculative segment</div>
+        </div>
+      </div>
+
+      <div class="segments" data-deepdive="TSLA" style="display:none;">
+        <div class="seg-card space">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#ff6a3d" stroke-width="1.6"><path d="M5 17h14M6 17l1.5-8h9L18 17M9 9V6a3 3 0 013-3 3 3 0 013 3v3"/><circle cx="8" cy="19" r="1.6"/><circle cx="16" cy="19" r="1.6"/></svg>
+          <h3>Automotive</h3>
+          <p>Model 3, Y, S, X, and Cybertruck — Tesla delivered roughly 1.64 million vehicles in 2025. Margins have compressed as price cuts and EV competition (especially from Chinese automakers like BYD) have intensified globally.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">Still the largest revenue segment by far</div>
+        </div>
+        <div class="seg-card conn">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#4d9fff" stroke-width="1.6"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg>
+          <h3>Energy generation &amp; storage</h3>
+          <p>Megapack grid-scale batteries and Powerwall home storage. This segment has been growing faster than automotive and carries higher margins — increasingly viewed by bulls as Tesla's most underappreciated business.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">Fastest-growing, highest-margin segment</div>
+        </div>
+        <div class="seg-card ai">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#35d68f" stroke-width="1.6"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 9h.01M15 9h.01M9 15h6M2 9h3M2 15h3M19 9h3M19 15h3M9 2v3M15 2v3M9 19v3M15 19v3"/></svg>
+          <h3>Robotaxi &amp; AI (Optimus/FSD)</h3>
+          <p>Full Self-Driving software, the robotaxi service now live in four US metro areas, and the Optimus humanoid robot program. This is where nearly all of Tesla's long-term valuation premium over other automakers actually comes from.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">Speculative — the core of the bull thesis</div>
+        </div>
+      </div>
+
+      <div class="segments" data-deepdive="AAPL" style="display:none;">
+        <div class="seg-card space">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#ff6a3d" stroke-width="1.6"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+          <h3>iPhone</h3>
+          <p>Still the crown jewel — roughly half of total revenue. Q1 2026 iPhone revenue hit $85.27B (+23% YoY), the strongest quarter in the segment's history, despite a maturing global smartphone market.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">~51% of revenue — the dominant segment</div>
+        </div>
+        <div class="seg-card conn">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#4d9fff" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 12a4 4 0 1 1 8 0"/></svg>
+          <h3>Services</h3>
+          <p>App Store, iCloud, Apple Music, AppleCare, and more — hit a new all-time-high quarter at $30.01B (+14% YoY). Higher-margin and more predictable than hardware, and the installed base now exceeds 2.5 billion active devices.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">Fastest-growing high-margin segment</div>
+        </div>
+        <div class="seg-card ai">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#35d68f" stroke-width="1.6"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 9h.01M15 9h.01M9 15h6M2 9h3M2 15h3M19 9h3M19 15h3M9 2v3M15 2v3M9 19v3M15 19v3"/></svg>
+          <h3>Mac, iPad &amp; Wearables</h3>
+          <p>Mac ($8.39B, -7% YoY), iPad ($8.60B, +6% YoY), and Wearables/Home/Accessories ($11.49B, -2% YoY) round out the portfolio — smaller, mixed-growth segments that support the broader ecosystem strategy.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">Supporting segments, mixed growth</div>
+        </div>
+      </div>
+
+      <div class="segments" data-deepdive="MSFT" style="display:none;">
+        <div class="seg-card space">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#ff6a3d" stroke-width="1.6"><path d="M4 16a12 12 0 0 1 16 0M7 19a8 8 0 0 1 10 0M2 13a16 16 0 0 1 20 0"/></svg>
+          <h3>Azure &amp; Cloud</h3>
+          <p>Grew 40% in the most recent quarter — the fastest-growing major segment. This is the core of the bull case: cloud infrastructure demand from both enterprise migration and AI workloads.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">Fastest-growing, most-watched segment</div>
+        </div>
+        <div class="seg-card conn">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#4d9fff" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 10h16M10 4v16"/></svg>
+          <h3>Productivity &amp; Business (Office, LinkedIn)</h3>
+          <p>Microsoft 365, LinkedIn, and Dynamics — the steady, high-margin backbone of the business, increasingly bundled with Copilot AI features to drive per-seat revenue growth.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">Stable, high-margin core</div>
+        </div>
+        <div class="seg-card ai">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#35d68f" stroke-width="1.6"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 9h.01M15 9h.01M9 15h6M2 9h3M2 15h3M19 9h3M19 15h3M9 2v3M15 2v3M9 19v3M15 19v3"/></svg>
+          <h3>AI business (Copilot, OpenAI partnership)</h3>
+          <p>The AI business hit a $37B annualized run rate, up 123% YoY — but it's funded by massive capex ($80-146B projected for FY2026), which is exactly what bears point to as the near-term risk.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">Fast-growing, capital-intensive</div>
+        </div>
+      </div>
+
+      <div class="segments" data-deepdive="GOOGL" style="display:none;">
+        <div class="seg-card space">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#ff6a3d" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3a15 15 0 010 18M12 3a15 15 0 000 18M3 12h18"/></svg>
+          <h3>Search &amp; advertising</h3>
+          <p>Still the core profit engine — Google Search and YouTube dominate digital advertising. Gemini-powered AI features in Search are aimed at defending this position against AI-native competitors.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">Largest, most profitable segment</div>
+        </div>
+        <div class="seg-card conn">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#4d9fff" stroke-width="1.6"><path d="M4 16a12 12 0 0 1 16 0M7 19a8 8 0 0 1 10 0M2 13a16 16 0 0 1 20 0"/></svg>
+          <h3>Google Cloud</h3>
+          <p>Growing but facing near-term margin pressure — demand is outpacing capacity, forcing Alphabet to expand third-party compute capacity to serve large cloud customers, which compresses margins in the short run.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">Growing, margin-pressured near-term</div>
+        </div>
+        <div class="seg-card ai">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#35d68f" stroke-width="1.6"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 9h.01M15 9h.01M9 15h6M2 9h3M2 15h3M19 9h3M19 15h3M9 2v3M15 2v3M9 19v3M15 19v3"/></svg>
+          <h3>Other Bets (Waymo, DeepMind, etc.)</h3>
+          <p>Waymo's self-driving expansion, DeepMind's AI research, and other early-stage ventures — long-term optionality that adds to costs today but represents call options on future markets.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">Speculative, long-horizon bets</div>
+        </div>
+      </div>
+
+      <div class="segments" data-deepdive="AMZN" style="display:none;">
+        <div class="seg-card space">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#ff6a3d" stroke-width="1.6"><path d="M4 16a12 12 0 0 1 16 0M7 19a8 8 0 0 1 10 0M2 13a16 16 0 0 1 20 0"/></svg>
+          <h3>AWS (cloud infrastructure)</h3>
+          <p>Posted its fastest growth in 15 quarters — the highest-margin segment and the one that funds most of Amazon's other bets. AI workload demand has been a major recent tailwind.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">Highest-margin, fastest-growing segment</div>
+        </div>
+        <div class="seg-card conn">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#4d9fff" stroke-width="1.6"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg>
+          <h3>North America &amp; International retail</h3>
+          <p>Core e-commerce — North America retail margins expanded to 7.9% from 6.3%, with unit growth hitting 15%, the highest since COVID. International remains a smaller, improving contributor.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">Largest revenue segment, improving margins</div>
+        </div>
+        <div class="seg-card ai">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#35d68f" stroke-width="1.6"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 9h.01M15 9h.01M9 15h6M2 9h3M2 15h3M19 9h3M19 15h3M9 2v3M15 2v3M9 19v3M15 19v3"/></svg>
+          <h3>Advertising &amp; AI</h3>
+          <p>A fast-growing, high-margin ad business built on top of Amazon's retail traffic, plus a heavy AI infrastructure buildout (~$200B planned 2026 capex) supporting both AWS and in-house AI efforts.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">Fast-growing, capital-intensive</div>
+        </div>
+      </div>
+
+      <div class="segments" data-deepdive="META" style="display:none;">
+        <div class="seg-card space">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#ff6a3d" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
+          <h3>Family of Apps advertising</h3>
+          <p>Facebook, Instagram, WhatsApp, and Messenger — the advertising engine has kept beating estimates (15 consecutive quarters of revenue beats), even as spending on other segments has weighed on the stock.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">Core profit engine, consistently strong</div>
+        </div>
+        <div class="seg-card conn">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#4d9fff" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3"/></svg>
+          <h3>Reality Labs (AR/VR)</h3>
+          <p>Quest headsets and AR/VR research — a long-running, heavily loss-making bet on the metaverse/spatial computing thesis that predates the current AI cycle.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">Persistent losses, long-horizon bet</div>
+        </div>
+        <div class="seg-card ai">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#35d68f" stroke-width="1.6"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 9h.01M15 9h.01M9 15h6M2 9h3M2 15h3M19 9h3M19 15h3M9 2v3M15 2v3M9 19v3M15 19v3"/></svg>
+          <h3>AI infrastructure &amp; Llama models</h3>
+          <p>Meta's open-weight Llama models and massive AI infrastructure spend (~$125-145B planned for 2026) power both ad targeting improvements and its own AI products — the single biggest driver of recent capex concern.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">Heaviest capex growth, biggest bear concern</div>
+        </div>
+      </div>
+
+      <div class="segments" data-deepdive="NVDA" style="display:none;">
+        <div class="seg-card space">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#ff6a3d" stroke-width="1.6"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="M8 10h8M8 14h4"/></svg>
+          <h3>Data Center (AI GPUs)</h3>
+          <p>The overwhelming majority of revenue and growth — Nvidia is the dominant supplier of the GPUs that power essentially every major AI buildout. FY2026 revenue hit $215.94B, up 65.47% YoY.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">The core of the entire business now</div>
+        </div>
+        <div class="seg-card conn">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#4d9fff" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18"/></svg>
+          <h3>Gaming</h3>
+          <p>GeForce GPUs for PC gaming — Nvidia's original business, now a small fraction of total revenue but still a meaningful, profitable, and more stable segment relative to AI-cycle swings.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">Legacy segment, now a small share</div>
+        </div>
+        <div class="seg-card ai">
+          <svg class="seg-icon" viewBox="0 0 24 24" fill="none" stroke="#35d68f" stroke-width="1.6"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 9h.01M15 9h.01M9 15h6M2 9h3M2 15h3M19 9h3M19 15h3M9 2v3M15 2v3M9 19v3M15 19v3"/></svg>
+          <h3>Professional Visualization &amp; Automotive</h3>
+          <p>Smaller segments (workstation GPUs, self-driving compute platforms) that round out the portfolio — dwarfed by Data Center but positioned as future growth vectors as AI moves into more industries.</p>
+          <div class="seg-bar"><span></span></div>
+          <div class="seg-pct">Smaller, emerging segments</div>
+        </div>
+      </div>
+
+      <div class="segments dd-placeholder" data-deepdive-placeholder style="display:none;">
+        <div class="seg-card" style="grid-column:1/-1; text-align:center;">
+          <h3 id="dd-placeholder-name">This company's</h3>
+          <p>Full deep-dive write-up (business segments, valuation history, catalysts, ownership, and risks) isn't built yet for this ticker — it's on the list. The live chart, news, peers, and technicals above already work for it right now though, via the ticker search box.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="timeline">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>How we got to a public stock</h2>
+        <span class="tag">Valuation flight log</span>
+      </div>
+      <div class="timeline" data-deepdive="SPCX">
+        <div class="t-item">
+          <div class="t-date">Jan 2023</div>
+          <div class="t-title">Primary funding round</div>
+          <div class="t-desc">SpaceX raised roughly $750M in a primary round.</div>
+          <div class="t-val">≈ $137B valuation</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Dec 2024</div>
+          <div class="t-title">Secondary share sale</div>
+          <div class="t-desc">A $1.25B secondary sale let employees and early investors cash out some shares, at $185/share.</div>
+          <div class="t-val">≈ $350B valuation</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Jul 2025</div>
+          <div class="t-title">Another insider sale</div>
+          <div class="t-desc">Shares changed hands at $212 each in a subsequent tender.</div>
+          <div class="t-val">≈ $400B valuation</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Dec 2025</div>
+          <div class="t-title">Insider sale at $421/share</div>
+          <div class="t-desc">Valuation roughly doubled from mid-2025 as anticipation of a public listing built.</div>
+          <div class="t-val">≈ $800B valuation</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Feb 2026</div>
+          <div class="t-title">xAI acquisition</div>
+          <div class="t-desc">SpaceX acquired Elon Musk's AI venture xAI in an all-stock deal, adding Grok, X, and AI infrastructure to the business ahead of the listing.</div>
+          <div class="t-val">Combined entity ≈ $1.25T</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Apr 1, 2026</div>
+          <div class="t-title">Confidential S-1 filed</div>
+          <div class="t-desc">SpaceX filed confidentially with the SEC, targeting a June Nasdaq listing.</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Jun 12, 2026</div>
+          <div class="t-title">IPO day</div>
+          <div class="t-desc">Shares priced at $135 and opened around $150 — an ~11% pop. Underwriters' full over-allotment brought total shares sold to roughly 638.9M, for gross proceeds in the neighborhood of $75–86B depending on the source — the largest IPO on record.</div>
+          <div class="t-val">Listing valuation ≈ $1.8–2.3T</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Jun 16, 2026</div>
+          <div class="t-title">Post-IPO peak</div>
+          <div class="t-desc">Shares hit an intraday high of $225.64, briefly pushing SpaceX's market cap above Amazon and Microsoft, before a multi-session pullback began.</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Jul 2026</div>
+          <div class="t-title">Sharp drawdown</div>
+          <div class="t-desc">By late July, SPCX had fallen well below its IPO price and roughly 33% over the trailing month, with short interest climbing to an estimated ~32% of the float as the stock's first earnings report and a lockup-related share unlock approach.</div>
+          <div class="t-val">Trading near 52-week lows</div>
+        </div>
+      </div>
+
+      <div class="timeline" data-deepdive="TSLA" style="display:none;">
+        <div class="t-item">
+          <div class="t-date">Dec 22, 2025</div>
+          <div class="t-title">All-time high</div>
+          <div class="t-desc">Shares hit an intraday all-time high of roughly $489.88, on robotaxi expansion optimism and record delivery expectations heading into 2026.</div>
+          <div class="t-val">Market cap briefly &gt; $1.5T</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Early-mid 2026</div>
+          <div class="t-title">Sharp pullback</div>
+          <div class="t-desc">Shares fell as low as the $220s during 2026, as margin compression, EV price competition (particularly from Chinese automakers), and weaker-than-expected quarterly earnings weighed on the stock.</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Robotaxi rollout</div>
+          <div class="t-title">Live in four US metro areas</div>
+          <div class="t-desc">Tesla's robotaxi service expanded to four US metropolitan areas, a key milestone bulls point to — though safety incidents during testing have also drawn scrutiny and periodically pressured the stock.</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Jul 2026</div>
+          <div class="t-title">Volatile summer, merger speculation</div>
+          <div class="t-desc">Shares traded choppily around the $300-$310 range. Analyst commentary (including from RBC) has floated speculation about a potential future Tesla-SpaceX corporate relationship, though nothing has been confirmed by either company.</div>
+          <div class="t-val">~30x FY30E adj. EBITDA — priced for a lot</div>
+        </div>
+      </div>
+
+      <div class="timeline" data-deepdive="AAPL" style="display:none;">
+        <div class="t-item">
+          <div class="t-date">Feb 2026</div>
+          <div class="t-title">Record Q1 FY2026 revenue</div>
+          <div class="t-desc">Revenue reached $143.8B (+16% YoY), a record quarter, driven by the strongest iPhone quarter in company history and a new Services all-time high. EPS of $2.84 beat consensus estimates significantly.</div>
+          <div class="t-val">Market cap surpassed $3T</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Feb-Mar 2026</div>
+          <div class="t-title">Pullback despite the beat</div>
+          <div class="t-desc">Even with record results, shares slipped roughly 6% from January highs — a reminder that regulatory and macro headwinds can outweigh strong fundamentals in the near term.</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Jul 2026</div>
+          <div class="t-title">Trading near $315</div>
+          <div class="t-desc">Shares have traded in a relatively tight range through mid-2026, with the market weighing continued Services growth and "Privacy-First AI" positioning against regulatory scrutiny.</div>
+          <div class="t-val">Roughly flat to modestly up YTD</div>
+        </div>
+      </div>
+
+      <div class="timeline" data-deepdive="MSFT" style="display:none;">
+        <div class="t-item">
+          <div class="t-date">Early 2026</div>
+          <div class="t-title">Strong fundamentals, weak stock</div>
+          <div class="t-desc">Q3 FY2026 EPS of $4.27 beat the $4.07 estimate, revenue hit $82.89B (+18.3% YoY), Azure grew 40%, and the AI business hit a $37B annualized run-rate (+123%) — yet the stock still declined double digits YTD.</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Mid 2026</div>
+          <div class="t-title">Capex concerns weigh on shares</div>
+          <div class="t-desc">Bears increasingly focused on the projected $80-146B in FY2026 capital expenditures, arguing infrastructure spend is outpacing revenue growth. Securities class action filings over Azure/Copilot disclosures added to the pressure.</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Jul 29, 2026</div>
+          <div class="t-title">Down ~18-27% YTD heading into earnings</div>
+          <div class="t-desc">Despite the pullback, commercial remaining performance obligations swelled to $627B — bulls argue fundamentals have decoupled from price, offering the cheapest forward multiple since 2023.</div>
+          <div class="t-val">Trading near 52-week lows despite strong fundamentals</div>
+        </div>
+      </div>
+
+      <div class="timeline" data-deepdive="GOOGL" style="display:none;">
+        <div class="t-item">
+          <div class="t-date">Early-mid 2026</div>
+          <div class="t-title">Capex hikes spook the market</div>
+          <div class="t-desc">Alphabet raised its 2026 capital spending forecast to $195-205B (up from $180-190B) — shares of Amazon, Meta, and Microsoft all tumbled on the news even as Alphabet itself reported accelerating cloud growth.</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Ongoing</div>
+          <div class="t-title">DOJ search investigation overhang</div>
+          <div class="t-desc">An ongoing DOJ search-related antitrust investigation has been a persistent overhang on sentiment, even as core search profitability and product momentum remain strong.</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Jul 2026</div>
+          <div class="t-title">Trading in the low-to-mid $300s</div>
+          <div class="t-desc">Shares have traded choppily, with cloud/AI momentum offset by capex concerns and the antitrust backdrop.</div>
+          <div class="t-val">Consensus targets imply ~27-31% upside</div>
+        </div>
+      </div>
+
+      <div class="timeline" data-deepdive="AMZN" style="display:none;">
+        <div class="t-item">
+          <div class="t-date">Q1 2026</div>
+          <div class="t-title">Big earnings beat</div>
+          <div class="t-desc">EPS of $2.78 topped the $1.73 consensus (a 60.69% surprise) on revenue of $181.52B, up 16.61% YoY — AWS posted its fastest growth in 15 quarters.</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Mid 2026</div>
+          <div class="t-title">Heavy AI capex, cash burn concerns</div>
+          <div class="t-desc">Planned 2026 capex of roughly $200B pushed free cash flow down sharply and increased long-term debt — a real tension between aggressive AI infrastructure investment and near-term cash generation.</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Jul 30, 2026</div>
+          <div class="t-title">Q2 earnings, ~12% below 52-week high</div>
+          <div class="t-desc">Trading around $226-242 heading into Q2 earnings, roughly 12% below its 52-week high of $278.56, with 62 analysts holding buy ratings and zero sells.</div>
+          <div class="t-val">Consensus target implies ~30-35% upside</div>
+        </div>
+      </div>
+
+      <div class="timeline" data-deepdive="META" style="display:none;">
+        <div class="t-item">
+          <div class="t-date">Ongoing</div>
+          <div class="t-title">15 straight quarters of revenue beats</div>
+          <div class="t-desc">Meta's core advertising business has topped revenue estimates for 15 consecutive quarters and beaten EPS expectations in 13 straight — a remarkably consistent operating track record.</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Apr 2026</div>
+          <div class="t-title">Capex guidance raised again</div>
+          <div class="t-desc">Meta lifted its 2026 capex range by $10B to $125-145B, part of the same wave of AI infrastructure spending pressuring all the hyperscalers' share prices this year.</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Jul 29, 2026</div>
+          <div class="t-title">Q2 earnings, trading near $550-590</div>
+          <div class="t-desc">Shares have lagged over the past year despite strong operational performance — widely seen as a case of the market penalizing AI capex intensity ahead of proof it pays off.</div>
+          <div class="t-val">Consensus target implies ~35-52% upside</div>
+        </div>
+      </div>
+
+      <div class="timeline" data-deepdive="NVDA" style="display:none;">
+        <div class="t-item">
+          <div class="t-date">FY2026</div>
+          <div class="t-title">Explosive revenue growth</div>
+          <div class="t-desc">Full fiscal year revenue reached $215.94B, up 65.47% YoY, with earnings of $120.07B (+64.75%) — Nvidia has captured an outsized share of the hundreds of billions in AI infrastructure spending across the industry.</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Mid 2026</div>
+          <div class="t-title">Balancing open-source and closed partnerships</div>
+          <div class="t-desc">Nvidia has publicly backed open-source AI models while reportedly providing substantial financial support to other AI labs — a strategy aimed at keeping GPU demand broad-based rather than concentrated in a few customers.</div>
+        </div>
+        <div class="t-item">
+          <div class="t-date">Jul 2026</div>
+          <div class="t-title">~12% below 52-week high</div>
+          <div class="t-desc">Shares pulled back alongside the broader hyperscaler capex selloff, even though Nvidia is the direct beneficiary of that same spending.</div>
+          <div class="t-val">Consensus target implies ~59% upside</div>
+        </div>
+      </div>
+
+      <div class="timeline dd-placeholder" data-deepdive-placeholder style="display:none;">
+        <div class="t-item">
+          <div class="t-title">Not built yet for this ticker</div>
+          <div class="t-desc">A researched valuation/price history timeline isn't available for this company yet. The live chart above already shows real historical price action for it though.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalysts">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What's moving the stock right now</h2>
+        <span class="tag">Recent flight events</span>
+      </div>
+      <div class="news-list" data-deepdive="SPCX">
+        <div class="news-item">
+          <div class="news-date">Jul 21–22</div>
+          <div class="news-text">SpaceX set its <b>first earnings date</b> as a public company — a report that also triggers an early <b>share-lockup unlock</b>, freeing more insider shares to trade.</div>
+          <span class="news-tag catalyst">Catalyst</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Jul 21</div>
+          <div class="news-text">Short interest has grown to an estimated <b>~32% of the float</b>, with Musk publicly warning short sellers as the stock sits near 52-week lows.</div>
+          <span class="news-tag risk">Risk</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Jul 20–22</div>
+          <div class="news-text">A <b>Starship test flight (Flight 13)</b> was aborted before launch, contributing to a same-day share drop — a reminder that hardware-heavy segments carry execution risk that a normal software stock doesn't.</div>
+          <span class="news-tag risk">Risk</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Late Jul</div>
+          <div class="news-text">High-profile investors have been active in both directions — ARK Invest (Cathie Wood) has been reported adding shares, while other commentary has grown more skeptical of the stock's near-term path.</div>
+          <span class="news-tag info">Sentiment</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Ongoing</div>
+          <div class="news-text">SpaceX and Rocket Lab were among companies awarded a U.S. Space Force contract vehicle with a reported <b>$17B ceiling</b>, underscoring the government-demand side of the launch business.</div>
+          <span class="news-tag catalyst">Catalyst</span>
+        </div>
+      </div>
+
+      <div class="news-list" data-deepdive="TSLA" style="display:none;">
+        <div class="news-item">
+          <div class="news-date">Jul 28</div>
+          <div class="news-text">RBC Capital lowered its price target to <b>$480 from $500</b> while remaining constructive, part of a broader wave of target revisions this week as analysts digest recent delivery and margin data.</div>
+          <span class="news-tag info">Sentiment</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Jul 28</div>
+          <div class="news-text">ARK Invest (Cathie Wood) bought roughly <b>28,000 shares</b> in a single session — part of a pattern of ARK adding to both Tesla and SpaceX on recent weakness.</div>
+          <span class="news-tag catalyst">Catalyst</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Late Jul</div>
+          <div class="news-text">Coverage has floated speculation about a potential future <b>Tesla-SpaceX relationship</b> (RBC published a note modeling what a merger could look like) — this is analyst speculation, not a confirmed corporate action from either company.</div>
+          <span class="news-tag info">Sentiment</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Ongoing</div>
+          <div class="news-text"><b>Robotaxi safety incidents</b> during expanded testing have periodically pressured the stock — a real execution risk given how much of the bull case rests on autonomy succeeding on schedule.</div>
+          <span class="news-tag risk">Risk</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Ongoing</div>
+          <div class="news-text">Analyst price targets remain unusually split — from roughly <b>$25 on the bear end to $600+ on the bull end</b> — reflecting deep disagreement over how much of the valuation is autonomy/robotics optionality versus core auto/energy fundamentals.</div>
+          <span class="news-tag info">Sentiment</span>
+        </div>
+      </div>
+
+      <div class="news-list" data-deepdive="AAPL" style="display:none;">
+        <div class="news-item">
+          <div class="news-date">Ongoing</div>
+          <div class="news-text">Apple is reportedly planning a <b>major push into the smart home market</b>, part of its broader ecosystem expansion strategy.</div>
+          <span class="news-tag catalyst">Catalyst</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Ongoing</div>
+          <div class="news-text">Regulatory pressure remains a persistent overhang — antitrust scrutiny and app store policy fights continue in multiple jurisdictions.</div>
+          <span class="news-tag risk">Risk</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Ongoing</div>
+          <div class="news-text">Services growth and the installed base (now over 2.5 billion active devices) are the key metrics bulls watch each quarter as evidence of the ecosystem strategy working.</div>
+          <span class="news-tag info">Sentiment</span>
+        </div>
+      </div>
+
+      <div class="news-list" data-deepdive="MSFT" style="display:none;">
+        <div class="news-item">
+          <div class="news-date">Jul 29</div>
+          <div class="news-text">Microsoft reported <b>fiscal Q4 earnings</b> after market close — a key data point for whether Azure/AI momentum can offset capex concerns.</div>
+          <span class="news-tag catalyst">Catalyst</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Ongoing</div>
+          <div class="news-text"><b>Securities class action filings</b> allege misleading statements about Azure growth and Copilot functionality — an active legal/sentiment overhang.</div>
+          <span class="news-tag risk">Risk</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Ongoing</div>
+          <div class="news-text">Analysts continue debating whether the ~$80-146B FY2026 capex plan will pay off fast enough to justify the spend — the central question for the stock right now.</div>
+          <span class="news-tag info">Sentiment</span>
+        </div>
+      </div>
+
+      <div class="news-list" data-deepdive="GOOGL" style="display:none;">
+        <div class="news-item">
+          <div class="news-date">Ongoing</div>
+          <div class="news-text">Alphabet raised its 2026 capex forecast to <b>$195-205B</b>, triggering a selloff across all major hyperscalers despite Alphabet's own accelerating cloud growth.</div>
+          <span class="news-tag risk">Risk</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Ongoing</div>
+          <div class="news-text">The <b>DOJ's search-related antitrust investigation</b> may extend into late 2025/2026 — potential remedies could reshape default-search-engine deals, including with Apple.</div>
+          <span class="news-tag risk">Risk</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Ongoing</div>
+          <div class="news-text">Growth in Gemini engagement and AI-driven search monetization is the key metric bulls point to as evidence Alphabet is successfully defending its core business.</div>
+          <span class="news-tag info">Sentiment</span>
+        </div>
+      </div>
+
+      <div class="news-list" data-deepdive="AMZN" style="display:none;">
+        <div class="news-item">
+          <div class="news-date">Jul 30</div>
+          <div class="news-text">Amazon reports <b>Q2 2026 earnings</b> — analysts expect $1.82 EPS (up from $1.68 a year ago) on ~$196.25B revenue, with a streak of 7 consecutive revenue beats on the line.</div>
+          <span class="news-tag catalyst">Catalyst</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Ongoing</div>
+          <div class="news-text">Amazon is reportedly <b>overhauling its AI strategy</b>, winding down some in-house Nova models and sharpening focus on a new frontier-model effort — with related layoffs on the AGI team.</div>
+          <span class="news-tag info">Sentiment</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Ongoing</div>
+          <div class="news-text">~$200B planned 2026 capex is pressuring free cash flow — the same capex-vs-cash-flow tension playing out across all the hyperscalers this year.</div>
+          <span class="news-tag risk">Risk</span>
+        </div>
+      </div>
+
+      <div class="news-list" data-deepdive="META" style="display:none;">
+        <div class="news-item">
+          <div class="news-date">Jul 29</div>
+          <div class="news-text">Meta reports <b>Q2 earnings</b> — analysts expect $7.23 EPS on $59.50B revenue, continuing a streak of 15 straight quarterly revenue beats.</div>
+          <span class="news-tag catalyst">Catalyst</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Ongoing</div>
+          <div class="news-text">Analyst price targets have been moving in both directions recently — some cutting (UBS to $766 from $865) and others raising sharply (Rothschild to $1,000 from $900) on the same AI capex debate.</div>
+          <span class="news-tag info">Sentiment</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Ongoing</div>
+          <div class="news-text">Bond markets have shown rising concern about tech-giant debt tied to AI spending — a macro-level signal worth watching alongside the stock itself.</div>
+          <span class="news-tag risk">Risk</span>
+        </div>
+      </div>
+
+      <div class="news-list" data-deepdive="NVDA" style="display:none;">
+        <div class="news-item">
+          <div class="news-date">Aug 26</div>
+          <div class="news-text">Nvidia will host its <b>next earnings conference call</b> — the market's clearest read on whether hyperscaler capex plans are translating into continued GPU demand.</div>
+          <span class="news-tag catalyst">Catalyst</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Ongoing</div>
+          <div class="news-text">Nvidia is the single largest beneficiary of the $500B+ in combined 2026 AI infrastructure spending planned by Alphabet, Amazon, Meta, and Microsoft — making its fortunes closely tied to those companies' continued capex commitment.</div>
+          <span class="news-tag info">Sentiment</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Ongoing</div>
+          <div class="news-text">Reports of Nvidia backing open-source AI models while also financially supporting other labs have drawn some scrutiny over potential conflicts in its market position.</div>
+          <span class="news-tag risk">Risk</span>
+        </div>
+      </div>
+
+      <div class="news-list dd-placeholder" data-deepdive-placeholder style="display:none;">
+        <div class="news-item"><div class="news-text">Curated catalyst tracking isn't built yet for this ticker — check the live news feed above for current headlines.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="analysts">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What analysts are saying</h2>
+        <span class="tag">Wide disagreement, high stakes</span>
+      </div>
+      <div class="analyst-strip" data-deepdive="SPCX">
+        <div class="analyst-stat">
+          <div class="k">Low target</div>
+          <div class="v alert">$131</div>
+        </div>
+        <div class="analyst-stat">
+          <div class="k">Street range</div>
+          <div class="v">wide</div>
+        </div>
+        <div class="analyst-stat">
+          <div class="k">High target</div>
+          <div class="v telemetry">$800</div>
+        </div>
+      </div>
+      <p class="dd-text" data-deepdive="SPCX" style="color:var(--text-dim); font-size:14px; max-width:70ch; margin:18px 0 26px;">
+        Published price targets for SPCX span an unusually wide range — roughly $131 to $800 per share — which itself tells you something: this is a business with real disagreement about what it's worth, not a mature, well-modeled stock. A few themes show up repeatedly in coverage:
+      </p>
+      <div class="risk-grid" data-deepdive="SPCX">
+        <div class="risk-card" style="border-left-color: var(--telemetry);">
+          <h4>Bulls point to</h4>
+          <p>Launch market dominance, Starlink's recurring-revenue growth curve, and the AI segment as a source of long-run optionality most legacy aerospace peers don't have.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--alert);">
+          <h4>Bears point to</h4>
+          <p>An IPO priced for near-perfect execution, thin near-term profitability disclosure, and a valuation that pre-IPO independent analysts (Morningstar) already flagged as stretched.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--starlink);">
+          <h4>Where it's headed next</h4>
+          <p>Commentary has increasingly centered on the company's first public earnings report as the moment that either validates or undercuts the bull case with real numbers instead of narrative.</p>
+        </div>
+      </div>
+
+      <div class="analyst-strip" data-deepdive="TSLA" style="display:none;">
+        <div class="analyst-stat">
+          <div class="k">Low target</div>
+          <div class="v alert">~$25</div>
+        </div>
+        <div class="analyst-stat">
+          <div class="k">Consensus</div>
+          <div class="v">Buy</div>
+        </div>
+        <div class="analyst-stat">
+          <div class="k">High target</div>
+          <div class="v telemetry">~$630</div>
+        </div>
+      </div>
+      <p class="dd-text" data-deepdive="TSLA" style="display:none; color:var(--text-dim); font-size:14px; max-width:70ch; margin:18px 0 26px;">
+        Roughly 40-50 analysts cover TSLA, with an average target around $398-423 (per S&P Global/StockAnalysis data) — but the range itself is the real story here: from roughly $25 on the bear end to over $600 on the bull end. That's arguably the widest analyst dispersion of any mega-cap stock, driven entirely by how much value each analyst assigns to autonomy and robotics versus the core auto business.
+      </p>
+      <div class="risk-grid" data-deepdive="TSLA" style="display:none;">
+        <div class="risk-card" style="border-left-color: var(--telemetry);">
+          <h4>Bulls point to</h4>
+          <p>Robotaxi now live in four metro areas, Energy storage growing faster than automotive with better margins, and Optimus/FSD as a call option on Tesla becoming an AI/robotics company, not just an automaker.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--alert);">
+          <h4>Bears point to</h4>
+          <p>Auto margin compression from price cuts and EV competition, a ~30x FY30E adjusted EBITDA valuation that assumes autonomy succeeds on an aggressive timeline, and safety incidents during robotaxi testing.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--starlink);">
+          <h4>Where it's headed next</h4>
+          <p>Quarterly delivery numbers and any concrete robotaxi expansion/safety news tend to move the stock more than almost any other single factor right now.</p>
+        </div>
+      </div>
+
+      <div class="analyst-strip" data-deepdive="AAPL" style="display:none;">
+        <div class="analyst-stat"><div class="k">Rating</div><div class="v">Buy</div></div>
+        <div class="analyst-stat"><div class="k">Recent close</div><div class="v telemetry">~$315</div></div>
+        <div class="analyst-stat"><div class="k">Consensus</div><div class="v">Strong Buy</div></div>
+      </div>
+      <p class="dd-text" data-deepdive="AAPL" style="display:none; color:var(--text-dim); font-size:14px; max-width:70ch; margin:18px 0 26px;">
+        Apple's coverage is broad and generally bullish, though less dramatically dispersed than the AI-infrastructure names — the debate here is more about the pace of Services growth and regulatory risk than existential questions about the business model.
+      </p>
+      <div class="risk-grid" data-deepdive="AAPL" style="display:none;">
+        <div class="risk-card" style="border-left-color: var(--telemetry);">
+          <h4>Bulls point to</h4>
+          <p>Record iPhone revenue, Services hitting new all-time highs with a 2.5B+ device installed base, and "Privacy-First AI" positioning as a differentiator.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--alert);">
+          <h4>Bears point to</h4>
+          <p>A maturing global smartphone market, ongoing antitrust and app-store regulatory pressure across multiple jurisdictions, and Mac/Wearables segments in decline.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--starlink);">
+          <h4>Where it's headed next</h4>
+          <p>Services growth rate and any regulatory rulings (app store fees, antitrust cases) are the two biggest swing factors analysts are watching.</p>
+        </div>
+      </div>
+
+      <div class="analyst-strip" data-deepdive="MSFT" style="display:none;">
+        <div class="analyst-stat"><div class="k">Low target</div><div class="v alert">$400</div></div>
+        <div class="analyst-stat"><div class="k">Consensus</div><div class="v">Strong Buy</div></div>
+        <div class="analyst-stat"><div class="k">High target</div><div class="v telemetry">$870</div></div>
+      </div>
+      <p class="dd-text" data-deepdive="MSFT" style="display:none; color:var(--text-dim); font-size:14px; max-width:70ch; margin:18px 0 26px;">
+        Roughly 56-97 analysts cover MSFT depending on the source, with an average target around $556-592 — implying substantial upside from where shares have traded after a rough 2026. Ratings remain overwhelmingly bullish (55+ Buy vs. a handful of Holds, essentially no Sells).
+      </p>
+      <div class="risk-grid" data-deepdive="MSFT" style="display:none;">
+        <div class="risk-card" style="border-left-color: var(--telemetry);">
+          <h4>Bulls point to</h4>
+          <p>40% Azure growth, an AI business run-rate up 123% YoY, $627B in commercial remaining performance obligations, and the cheapest forward earnings multiple since 2023.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--alert);">
+          <h4>Bears point to</h4>
+          <p>$80-146B in projected FY2026 capex growing faster than revenue, active securities class action litigation, and Copilot adoption reportedly running slower than hoped.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--starlink);">
+          <h4>Where it's headed next</h4>
+          <p>Whether Azure/AI monetization can visibly outpace the capex ramp is the central question analysts are modeling for the next few quarters.</p>
+        </div>
+      </div>
+
+      <div class="analyst-strip" data-deepdive="GOOGL" style="display:none;">
+        <div class="analyst-stat"><div class="k">Low target</div><div class="v alert">$340</div></div>
+        <div class="analyst-stat"><div class="k">Consensus</div><div class="v">Strong Buy</div></div>
+        <div class="analyst-stat"><div class="k">High target</div><div class="v telemetry">$515</div></div>
+      </div>
+      <p class="dd-text" data-deepdive="GOOGL" style="display:none; color:var(--text-dim); font-size:14px; max-width:70ch; margin:18px 0 26px;">
+        Around 54-64 analysts cover GOOGL, with an average target near $421-428 — implying meaningful upside. Ratings skew heavily bullish, though a handful of Holds reflect real caution about capex and antitrust risk.
+      </p>
+      <div class="risk-grid" data-deepdive="GOOGL" style="display:none;">
+        <div class="risk-card" style="border-left-color: var(--telemetry);">
+          <h4>Bulls point to</h4>
+          <p>Accelerating cloud growth, rising Gemini engagement and AI-driven search monetization, and continued dominance in digital advertising via Search and YouTube.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--alert);">
+          <h4>Bears point to</h4>
+          <p>A raised 2026 capex forecast ($195-205B) pressuring near-term margins, the ongoing DOJ search antitrust investigation, and rising costs from Other Bets like Waymo.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--starlink);">
+          <h4>Where it's headed next</h4>
+          <p>Any DOJ remedy decisions and continued Cloud margin trends (as third-party compute capacity expands) are the two biggest watch items.</p>
+        </div>
+      </div>
+
+      <div class="analyst-strip" data-deepdive="AMZN" style="display:none;">
+        <div class="analyst-stat"><div class="k">Rating</div><div class="v">62 Buy, 0 Sell</div></div>
+        <div class="analyst-stat"><div class="k">Consensus</div><div class="v">Strong Buy</div></div>
+        <div class="analyst-stat"><div class="k">Avg. target</div><div class="v telemetry">~$313</div></div>
+      </div>
+      <p class="dd-text" data-deepdive="AMZN" style="display:none; color:var(--text-dim); font-size:14px; max-width:70ch; margin:18px 0 26px;">
+        Around 62-65 analysts cover AMZN, overwhelmingly bullish with essentially zero Sell ratings. Average targets cluster around $305-323, implying solid upside from recent trading levels.
+      </p>
+      <div class="risk-grid" data-deepdive="AMZN" style="display:none;">
+        <div class="risk-card" style="border-left-color: var(--telemetry);">
+          <h4>Bulls point to</h4>
+          <p>AWS's fastest growth in 15 quarters, North America retail margins expanding to 7.9%, and a streak of 7 consecutive quarterly revenue beats.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--alert);">
+          <h4>Bears point to</h4>
+          <p>~$200B planned 2026 capex sharply reducing free cash flow, rising long-term debt, and a reported internal AI-strategy overhaul with associated layoffs.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--starlink);">
+          <h4>Where it's headed next</h4>
+          <p>Q2 2026 earnings (Jul 30) and whether AWS growth can be sustained are the most immediate catalysts analysts are watching.</p>
+        </div>
+      </div>
+
+      <div class="analyst-strip" data-deepdive="META" style="display:none;">
+        <div class="analyst-stat"><div class="k">Low target</div><div class="v alert">$360-525</div></div>
+        <div class="analyst-stat"><div class="k">Consensus</div><div class="v">Strong Buy</div></div>
+        <div class="analyst-stat"><div class="k">High target</div><div class="v telemetry">~$1,000</div></div>
+      </div>
+      <p class="dd-text" data-deepdive="META" style="display:none; color:var(--text-dim); font-size:14px; max-width:70ch; margin:18px 0 26px;">
+        Roughly 38-72 analysts cover META depending on the source, with average targets ranging from about $826 to $843 — implying substantial upside. As with the other AI-capex-heavy names, individual targets have moved sharply in both directions recently.
+      </p>
+      <div class="risk-grid" data-deepdive="META" style="display:none;">
+        <div class="risk-card" style="border-left-color: var(--telemetry);">
+          <h4>Bulls point to</h4>
+          <p>15 consecutive quarters of revenue beats, a dominant and highly profitable advertising business, and open-weight Llama models expanding Meta's AI ecosystem reach.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--alert);">
+          <h4>Bears point to</h4>
+          <p>$125-145B planned 2026 AI capex, persistent Reality Labs losses, and rising bond-market concern about tech-giant debt tied to AI infrastructure spending.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--starlink);">
+          <h4>Where it's headed next</h4>
+          <p>Q2 earnings (Jul 29) and any updated capex guidance are the immediate catalysts; longer-term, whether AI spend visibly improves ad targeting/monetization matters most.</p>
+        </div>
+      </div>
+
+      <div class="analyst-strip" data-deepdive="NVDA" style="display:none;">
+        <div class="analyst-stat"><div class="k">Rating</div><div class="v">Strong Buy</div></div>
+        <div class="analyst-stat"><div class="k">Analysts</div><div class="v">~61</div></div>
+        <div class="analyst-stat"><div class="k">Avg. target</div><div class="v telemetry">~$303</div></div>
+      </div>
+      <p class="dd-text" data-deepdive="NVDA" style="display:none; color:var(--text-dim); font-size:14px; max-width:70ch; margin:18px 0 26px;">
+        Around 61 analysts cover NVDA with an average target near $303-304, implying roughly 59% upside from recent levels — one of the largest upside gaps of any mega-cap, reflecting how directly Nvidia benefits from every other hyperscaler's AI capex.
+      </p>
+      <div class="risk-grid" data-deepdive="NVDA" style="display:none;">
+        <div class="risk-card" style="border-left-color: var(--telemetry);">
+          <h4>Bulls point to</h4>
+          <p>65%+ YoY revenue growth, dominant market position in AI data-center GPUs, and direct exposure to over $500B in combined 2026 AI infrastructure spending from its biggest customers.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--alert);">
+          <h4>Bears point to</h4>
+          <p>Extreme customer concentration risk (a handful of hyperscalers drive most demand), and questions about whether reported financial support to other AI labs creates conflicts of interest.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--starlink);">
+          <h4>Where it's headed next</h4>
+          <p>The Aug 26 earnings call is the next major catalyst — any signal that hyperscaler capex commitments are softening would matter more for Nvidia than almost any other stock.</p>
+        </div>
+      </div>
+
+      <div class="rating-dist" data-deepdive="SPCX">
+        <div class="mcp-callout">
+          <span class="mcp-label">Most-taken position among covering analysts</span>
+          <span class="mcp-value">BUY</span>
+          <span class="mcp-sub">The large majority of the ~30 firms covering SPCX rate it Buy/Strong Buy — a small handful (MoffettNathanson, CFRA, Morningstar) hold Sell/Neutral/fair-value-below-market positions on valuation grounds.</span>
+        </div>
+        <div class="rating-dist-label">Analyst rating distribution</div>
+        <div class="rating-bar">
+          <div class="seg buy" style="width:78%;">23-27 Buy</div>
+          <div class="seg hold" style="width:18%;">5-7 Hold</div>
+          <div class="seg sell" style="width:4%;">1 Sell</div>
+        </div>
+        <div class="rating-dist-note">Approximate, based on recently published counts across ~30 covering firms — exact figures shift as new ratings publish.</div>
+      </div>
+      <div class="scenario-timeline" data-deepdive="SPCX">
+        <div class="scenario-row">
+          <div><div class="sc-label">Near-term</div><div class="sc-date">By Aug 6, 2026</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>Earnings validate Starlink margins and guidance eases capital-needs concerns; insiders mostly hold through the lockup.</div>
+          <div class="sc-bear"><b>Bears expect</b>Lockup unlock adds real selling pressure regardless of earnings quality — the mechanical supply increase weighs on price.</div>
+        </div>
+        <div class="scenario-row">
+          <div><div class="sc-label">Medium-term</div><div class="sc-date">~6-12 months</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>Starship cadence improves, Starlink subscriber growth continues, and the stock re-rates toward the ~$240 consensus target as uncertainty resolves.</div>
+          <div class="sc-bear"><b>Bears expect</b>Continued FCF burn and further capital raises pressure the stock toward independent fair-value estimates (~$62-131).</div>
+        </div>
+        <div class="scenario-row">
+          <div><div class="sc-label">Long-term</div><div class="sc-date">Multi-year</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>Launch dominance + Starlink scale + AI optionality compound into a business justifying a much higher valuation.</div>
+          <div class="sc-bear"><b>Bears expect</b>Capital intensity across all three segments simultaneously proves structurally unprofitable at scale.</div>
+        </div>
+      </div>
+
+      <div class="rating-dist" data-deepdive="TSLA" style="display:none;">
+        <div class="mcp-callout">
+          <span class="mcp-label">Most-taken position among covering analysts</span>
+          <span class="mcp-value">BUY</span>
+          <span class="mcp-sub">Buy is still the single most common individual rating, but Tesla has the most evenly-split coverage of any ticker on this page — a substantial minority hold Hold or Sell positions specifically on valuation/autonomy-timeline grounds.</span>
+        </div>
+        <div class="rating-dist-label">Analyst rating distribution</div>
+        <div class="rating-bar">
+          <div class="seg buy" style="width:55%;">Buy-majority</div>
+          <div class="seg hold" style="width:30%;">Hold</div>
+          <div class="seg sell" style="width:15%;">Sell</div>
+        </div>
+        <div class="rating-dist-note">Approximate — Tesla has one of the most evenly-distributed rating splits of any mega-cap, reflecting genuine analyst disagreement.</div>
+      </div>
+      <div class="scenario-timeline" data-deepdive="TSLA" style="display:none;">
+        <div class="scenario-row">
+          <div><div class="sc-label">Near-term</div><div class="sc-date">Next delivery report</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>Delivery numbers beat estimates and robotaxi expansion continues without major safety incidents.</div>
+          <div class="sc-bear"><b>Bears expect</b>Margin compression continues as EV price competition intensifies, pressuring the next earnings print.</div>
+        </div>
+        <div class="scenario-row">
+          <div><div class="sc-label">Medium-term</div><div class="sc-date">~6-12 months</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>Robotaxi scales to more metro areas and energy storage margins keep improving, supporting a re-rate toward the ~$400 average target.</div>
+          <div class="sc-bear"><b>Bears expect</b>Autonomy progress disappoints relative to the aggressive timeline priced into the ~30x FY30E EBITDA multiple.</div>
+        </div>
+        <div class="scenario-row">
+          <div><div class="sc-label">Long-term</div><div class="sc-date">Multi-year</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>Tesla becomes primarily an AI/robotics company (FSD, Optimus) rather than just an automaker, justifying the premium multiple.</div>
+          <div class="sc-bear"><b>Bears expect</b>Core auto economics never fully recover and autonomy monetization takes far longer than the market currently prices in.</div>
+        </div>
+      </div>
+
+      <div class="rating-dist" data-deepdive="AAPL" style="display:none;">
+        <div class="mcp-callout">
+          <span class="mcp-label">Most-taken position among covering analysts</span>
+          <span class="mcp-value">BUY</span>
+          <span class="mcp-sub">Buy is clearly the dominant rating, with Hold as the main alternative position — Sell ratings are rare, reflecting broad (though not unanimous) confidence in the Services-led growth story.</span>
+        </div>
+        <div class="rating-dist-label">Analyst rating distribution</div>
+        <div class="rating-bar">
+          <div class="seg buy" style="width:70%;">Buy-majority</div>
+          <div class="seg hold" style="width:25%;">Hold</div>
+          <div class="seg sell" style="width:5%;">Sell</div>
+        </div>
+        <div class="rating-dist-note">Approximate — coverage is broad and generally bullish, with less dispersion than the AI-infrastructure-heavy names.</div>
+      </div>
+      <div class="scenario-timeline" data-deepdive="AAPL" style="display:none;">
+        <div class="scenario-row">
+          <div><div class="sc-label">Near-term</div><div class="sc-date">Next quarterly report</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>Services growth continues setting records and iPhone demand holds up despite market maturity.</div>
+          <div class="sc-bear"><b>Bears expect</b>Regulatory rulings (antitrust, app-store fees) begin visibly denting high-margin Services revenue.</div>
+        </div>
+        <div class="scenario-row">
+          <div><div class="sc-label">Medium-term</div><div class="sc-date">~6-12 months</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>"Privacy-First AI" features drive a fresh upgrade cycle and further Services attach-rate growth.</div>
+          <div class="sc-bear"><b>Bears expect</b>Mac/Wearables declines spread to iPhone as the replacement cycle lengthens further.</div>
+        </div>
+        <div class="scenario-row">
+          <div><div class="sc-label">Long-term</div><div class="sc-date">Multi-year</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>The ecosystem/Services flywheel continues compounding regardless of hardware cycles.</div>
+          <div class="sc-bear"><b>Bears expect</b>Structural regulatory changes permanently reduce Services take-rates across major markets.</div>
+        </div>
+      </div>
+
+      <div class="rating-dist" data-deepdive="MSFT" style="display:none;">
+        <div class="mcp-callout">
+          <span class="mcp-label">Most-taken position among covering analysts</span>
+          <span class="mcp-value">STRONG BUY</span>
+          <span class="mcp-sub">Roughly 55-62 of the analysts tracked by S&amp;P Global/StockAnalysis and TipRanks rate MSFT Buy or Strong Buy, against only a handful of Holds and effectively zero Sells — one of the most one-sided consensus views covered here.</span>
+        </div>
+        <div class="rating-dist-label">Analyst rating distribution</div>
+        <div class="rating-bar">
+          <div class="seg buy" style="width:93%;">55-62 Buy</div>
+          <div class="seg hold" style="width:7%;">3-4 Hold</div>
+        </div>
+        <div class="rating-dist-note">Approximate — one of the most one-sided bullish consensus views among mega-caps, with essentially zero Sell ratings.</div>
+      </div>
+      <div class="scenario-timeline" data-deepdive="MSFT" style="display:none;">
+        <div class="scenario-row">
+          <div><div class="sc-label">Near-term</div><div class="sc-date">Post Jul 29 earnings</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>Azure growth stays above 35-40% and AI run-rate growth continues, validating the capex spend.</div>
+          <div class="sc-bear"><b>Bears expect</b>Guidance shows capex growing faster than monetization, extending the multi-month selloff.</div>
+        </div>
+        <div class="scenario-row">
+          <div><div class="sc-label">Medium-term</div><div class="sc-date">~6-12 months</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>Copilot adoption accelerates and the stock re-rates toward the ~$556-592 average target as sentiment normalizes.</div>
+          <div class="sc-bear"><b>Bears expect</b>Securities litigation outcomes and continued high capex keep a lid on multiple expansion.</div>
+        </div>
+        <div class="scenario-row">
+          <div><div class="sc-label">Long-term</div><div class="sc-date">Multi-year</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>Azure/AI infrastructure becomes as durable a franchise as Office was for the prior two decades.</div>
+          <div class="sc-bear"><b>Bears expect</b>AI infrastructure becomes commoditized, compressing the premium currently justified by "picks and shovels" positioning.</div>
+        </div>
+      </div>
+
+      <div class="rating-dist" data-deepdive="GOOGL" style="display:none;">
+        <div class="mcp-callout">
+          <span class="mcp-label">Most-taken position among covering analysts</span>
+          <span class="mcp-value">STRONG BUY</span>
+          <span class="mcp-sub">Per Investing.com's tracked coverage, 58 analysts rate GOOGL Buy versus 6 Hold and 0 Sell — Buy is overwhelmingly the most-taken position, with the DOJ case being the main source of any Hold-level caution.</span>
+        </div>
+        <div class="rating-dist-label">Analyst rating distribution</div>
+        <div class="rating-bar">
+          <div class="seg buy" style="width:88%;">58+ Buy</div>
+          <div class="seg hold" style="width:12%;">~6 Hold</div>
+        </div>
+        <div class="rating-dist-note">Approximate — strongly bullish consensus, with the DOJ antitrust case being the main source of any caution.</div>
+      </div>
+      <div class="scenario-timeline" data-deepdive="GOOGL" style="display:none;">
+        <div class="scenario-row">
+          <div><div class="sc-label">Near-term</div><div class="sc-date">Next DOJ update</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>DOJ remedies turn out narrower than feared, removing a major sentiment overhang.</div>
+          <div class="sc-bear"><b>Bears expect</b>Structural remedies (e.g., forced divestitures or default-deal changes) materially impact core search economics.</div>
+        </div>
+        <div class="scenario-row">
+          <div><div class="sc-label">Medium-term</div><div class="sc-date">~6-12 months</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>Cloud margins improve as capacity catches up with demand, and Gemini engagement keeps growing.</div>
+          <div class="sc-bear"><b>Bears expect</b>Capex ($195-205B) keeps outpacing revenue growth, similar to the pattern pressuring other hyperscalers.</div>
+        </div>
+        <div class="scenario-row">
+          <div><div class="sc-label">Long-term</div><div class="sc-date">Multi-year</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>Search successfully defends against AI-native competitors while Cloud becomes a true third pillar alongside AWS/Azure.</div>
+          <div class="sc-bear"><b>Bears expect</b>AI-native search products erode Google's core advertising monopoly over time.</div>
+        </div>
+      </div>
+
+      <div class="rating-dist" data-deepdive="AMZN" style="display:none;">
+        <div class="mcp-callout">
+          <span class="mcp-label">Most-taken position among covering analysts</span>
+          <span class="mcp-value">STRONG BUY</span>
+          <span class="mcp-sub">62 of the analysts tracked by 24/7 Wall St./StockAnalysis rate AMZN Buy with zero Sell ratings — among the most lopsided consensus of any stock on this page.</span>
+        </div>
+        <div class="rating-dist-label">Analyst rating distribution</div>
+        <div class="rating-bar">
+          <div class="seg buy" style="width:97%;">62+ Buy</div>
+          <div class="seg hold" style="width:3%;">Few Hold</div>
+        </div>
+        <div class="rating-dist-note">Approximate — essentially zero Sell ratings, among the most one-sided consensus views covered here.</div>
+      </div>
+      <div class="scenario-timeline" data-deepdive="AMZN" style="display:none;">
+        <div class="scenario-row">
+          <div><div class="sc-label">Near-term</div><div class="sc-date">Jul 30, 2026 earnings</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>AWS growth acceleration continues and retail margins keep expanding, extending the beat streak to 8 quarters.</div>
+          <div class="sc-bear"><b>Bears expect</b>Guidance reveals free cash flow pressure from ~$200B capex is worse than modeled.</div>
+        </div>
+        <div class="scenario-row">
+          <div><div class="sc-label">Medium-term</div><div class="sc-date">~6-12 months</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>The AI strategy overhaul (new frontier-model effort) starts showing concrete product results.</div>
+          <div class="sc-bear"><b>Bears expect</b>Continued internal AI restructuring signals Amazon is falling behind in the AI race despite the capex spend.</div>
+        </div>
+        <div class="scenario-row">
+          <div><div class="sc-label">Long-term</div><div class="sc-date">Multi-year</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>AWS remains the dominant cloud platform while retail/advertising margins structurally improve.</div>
+          <div class="sc-bear"><b>Bears expect</b>Rising long-term debt from years of heavy capex eventually constrains strategic flexibility.</div>
+        </div>
+      </div>
+
+      <div class="rating-dist" data-deepdive="META" style="display:none;">
+        <div class="mcp-callout">
+          <span class="mcp-label">Most-taken position among covering analysts</span>
+          <span class="mcp-value">BUY</span>
+          <span class="mcp-sub">Per MarketBeat-tracked coverage, roughly 37+ of ~43 analysts rate META Buy or Strong Buy, versus a small number of Hold/Sell — Buy is the clearly dominant position, though individual price targets have moved unusually sharply in both directions in recent weeks.</span>
+        </div>
+        <div class="rating-dist-label">Analyst rating distribution</div>
+        <div class="rating-bar">
+          <div class="seg buy" style="width:85%;">37+ Buy</div>
+          <div class="seg hold" style="width:10%;">Hold</div>
+          <div class="seg sell" style="width:5%;">Sell</div>
+        </div>
+        <div class="rating-dist-note">Approximate — strongly bullish overall, though individual targets have swung sharply in both directions recently.</div>
+      </div>
+      <div class="scenario-timeline" data-deepdive="META" style="display:none;">
+        <div class="scenario-row">
+          <div><div class="sc-label">Near-term</div><div class="sc-date">Jul 29, 2026 earnings</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>The 15-quarter revenue-beat streak continues and ad-targeting improvements from AI investment become visible.</div>
+          <div class="sc-bear"><b>Bears expect</b>Guidance shows capex ($125-145B) climbing further without a clear near-term payoff.</div>
+        </div>
+        <div class="scenario-row">
+          <div><div class="sc-label">Medium-term</div><div class="sc-date">~6-12 months</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>Llama-based AI products expand Meta's ecosystem reach, supporting a re-rate toward the ~$826-843 average target.</div>
+          <div class="sc-bear"><b>Bears expect</b>Bond-market concern about AI-related debt spreads into equity sentiment.</div>
+        </div>
+        <div class="scenario-row">
+          <div><div class="sc-label">Long-term</div><div class="sc-date">Multi-year</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>AI-enhanced advertising becomes a durable second growth engine alongside the core Family of Apps business.</div>
+          <div class="sc-bear"><b>Bears expect</b>Reality Labs losses never resolve and combined with AI capex, structurally cap margins for years.</div>
+        </div>
+      </div>
+
+      <div class="rating-dist" data-deepdive="NVDA" style="display:none;">
+        <div class="mcp-callout">
+          <span class="mcp-label">Most-taken position among covering analysts</span>
+          <span class="mcp-value">STRONG BUY</span>
+          <span class="mcp-sub">Per StockAnalysis-tracked coverage, the ~61 analysts covering NVDA are near-unanimously bullish — Strong Buy/Buy is by far the most-taken position, reflecting broad conviction in continued AI infrastructure demand.</span>
+        </div>
+        <div class="rating-dist-label">Analyst rating distribution</div>
+        <div class="rating-bar">
+          <div class="seg buy" style="width:95%;">~58 Buy</div>
+          <div class="seg hold" style="width:5%;">Few Hold</div>
+        </div>
+        <div class="rating-dist-note">Approximate — near-unanimous bullish consensus among the ~61 analysts covering the stock.</div>
+      </div>
+      <div class="scenario-timeline" data-deepdive="NVDA" style="display:none;">
+        <div class="scenario-row">
+          <div><div class="sc-label">Near-term</div><div class="sc-date">Aug 26, 2026 earnings</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>Data Center revenue growth continues at or near current 65%+ rates, confirming hyperscaler capex is translating to real orders.</div>
+          <div class="sc-bear"><b>Bears expect</b>Any hint of hyperscaler capex moderation shows up first in Nvidia's order book given its customer concentration.</div>
+        </div>
+        <div class="scenario-row">
+          <div><div class="sc-label">Medium-term</div><div class="sc-date">~6-12 months</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>AI infrastructure spending broadens beyond the current handful of hyperscalers, diversifying the customer base.</div>
+          <div class="sc-bear"><b>Bears expect</b>In-house custom AI silicon from major customers begins meaningfully displacing GPU purchases.</div>
+        </div>
+        <div class="scenario-row">
+          <div><div class="sc-label">Long-term</div><div class="sc-date">Multi-year</div></div>
+          <div class="sc-bull"><b>Bulls expect</b>Nvidia's software/ecosystem moat (CUDA) keeps it the default choice even as competition in raw silicon increases.</div>
+          <div class="sc-bear"><b>Bears expect</b>The AI infrastructure buildout proves cyclical rather than secular, and today's growth rates don't persist.</div>
+        </div>
+      </div>
+
+      <div class="scenario-timeline dd-placeholder" data-deepdive-placeholder style="display:none;">
+        <div class="scenario-row"><div><div class="sc-label">Not built yet</div></div><div style="color:var(--text-dim); font-size:13px;">A scenario/timeline breakdown isn't available for this ticker yet.</div></div>
+      </div>
+
+      <p class="chart-note" style="margin-top:16px;">The scenario timeline above lays out what each side of the market debate is actually watching for and by when — it's not a prediction, a rating, or a recommendation from this site. Dates tied to real scheduled events (earnings, etc.) are accurate as of when this was written; "expects" framing beyond that reflects published analyst commentary, not a forecast.</p>
+
+      <div class="risk-grid dd-placeholder" data-deepdive-placeholder style="display:none;">
+        <div class="risk-card"><h4>Not built yet</h4><p>Curated analyst breakdown isn't available for this ticker yet — the company profile card above (from the ticker search) shows live basic stats in the meantime.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="news">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Latest news &amp; commentary</h2>
+        <span class="tag" id="news-status">Loading…</span>
+      </div>
+      <div class="news-feed" id="news-feed">
+        <div class="news-feed-item"><div class="nf-title">Loading recent coverage…</div></div>
+      </div>
+      <div class="chart-note" style="margin-top:16px;">
+        Real headlines and links pulled live from Finnhub's news API — not scraped, not reproduced in full. Click through to read the original article at its source. Updates whenever you load the page or switch tickers above.
+      </div>
+    </div>
+  </section>
+
+  <section id="ownership">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Who actually owns the stock</h2>
+        <span class="tag">Concentration &amp; float</span>
+      </div>
+      <div class="news-list" data-deepdive="SPCX">
+        <div class="news-item">
+          <div class="news-date">Founder</div>
+          <div class="news-text">Elon Musk retains <b>majority ownership</b> of SpaceX post-IPO — control is far more concentrated than at most large-cap public companies.</div>
+          <span class="news-tag info">Structure</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Early backers</div>
+          <div class="news-text">Long-time institutional investors including <b>Founders Fund, Fidelity Investments, and Google Ventures</b> hold significant stakes built up over two decades as a private company.</div>
+          <span class="news-tag info">Structure</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Post-IPO</div>
+          <div class="news-text"><b>ARK Invest (Cathie Wood)</b> has been an active public-market buyer, adding shares after the listing according to disclosed fund activity.</div>
+          <span class="news-tag catalyst">Notable holder</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Disclosed</div>
+          <div class="news-text">At least one sitting member of Congress has publicly disclosed a personal investment in SPCX, drawing scrutiny typical of high-profile new listings.</div>
+          <span class="news-tag info">Disclosure</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Ongoing</div>
+          <div class="news-text">Short interest sits near <b>~32% of the float</b> — a notably high level that signals a significant number of professional investors are betting against the stock near-term.</div>
+          <span class="news-tag risk">Bearish signal</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Upcoming</div>
+          <div class="news-text">Scheduled <b>lockup unlocks</b> (including one tied to the first earnings report) will release more insider and early-investor shares into the tradable float over time.</div>
+          <span class="news-tag risk">Supply increase</span>
+        </div>
+      </div>
+
+      <div class="news-list" data-deepdive="TSLA" style="display:none;">
+        <div class="news-item">
+          <div class="news-date">Founder</div>
+          <div class="news-text">Elon Musk holds a large stake (historically low-double-digit percent of shares outstanding) but wields outsized influence via board relationships and a long-pursued, court-contested pay package tied to performance milestones.</div>
+          <span class="news-tag info">Structure</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Institutional</div>
+          <div class="news-text">Majority of shares are held by large institutional funds (Vanguard, BlackRock, State Street, and actively-managed funds) typical of a long-established S&amp;P 500 mega-cap.</div>
+          <span class="news-tag info">Structure</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Ongoing</div>
+          <div class="news-text"><b>ARK Invest (Cathie Wood)</b> has continued adding shares on weakness in 2026, consistent with its long-standing large Tesla position across multiple ARK funds.</div>
+          <span class="news-tag catalyst">Notable holder</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Float</div>
+          <div class="news-text">Unlike SPCX, Tesla has a large, liquid public float built up over more than a decade as a public company — ownership concentration risk here is much lower than in a freshly-IPO'd stock.</div>
+          <span class="news-tag info">Structure</span>
+        </div>
+      </div>
+
+      <div class="news-list" data-deepdive="AAPL" style="display:none;">
+        <div class="news-item">
+          <div class="news-date">Structure</div>
+          <div class="news-text">No single founder-controlling stake remains — Apple is broadly held, with <b>Vanguard, BlackRock, and Berkshire Hathaway</b> among the largest institutional shareholders.</div>
+          <span class="news-tag info">Structure</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Notable holder</div>
+          <div class="news-text"><b>Berkshire Hathaway (Warren Buffett)</b> has historically held one of the largest single institutional stakes in Apple, though the position has been trimmed at times.</div>
+          <span class="news-tag catalyst">Notable holder</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Float</div>
+          <div class="news-text">Extremely large, liquid float — one of the most widely held stocks in the world, with minimal concentration risk compared to newer or founder-controlled companies.</div>
+          <span class="news-tag info">Structure</span>
+        </div>
+      </div>
+
+      <div class="news-list" data-deepdive="MSFT" style="display:none;">
+        <div class="news-item">
+          <div class="news-date">Structure</div>
+          <div class="news-text">Broadly institutionally held — <b>Vanguard and BlackRock</b> are among the largest shareholders, typical of a decades-old mega-cap with no controlling founder stake remaining.</div>
+          <span class="news-tag info">Structure</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Float</div>
+          <div class="news-text">Very large, liquid public float — ownership concentration is a non-issue here compared to newer listings.</div>
+          <span class="news-tag info">Structure</span>
+        </div>
+      </div>
+
+      <div class="news-list" data-deepdive="GOOGL" style="display:none;">
+        <div class="news-item">
+          <div class="news-date">Structure</div>
+          <div class="news-text">Founders <b>Larry Page and Sergey Brin</b> retain significant voting control through Class B super-voting shares, even though their economic ownership percentage is relatively modest.</div>
+          <span class="news-tag info">Structure</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Structure</div>
+          <div class="news-text">Alphabet's dual/triple-class share structure (Class A, B, and C) means public shareholders (Class A/C) have limited voting influence relative to founder-held Class B shares.</div>
+          <span class="news-tag info">Structure</span>
+        </div>
+      </div>
+
+      <div class="news-list" data-deepdive="AMZN" style="display:none;">
+        <div class="news-item">
+          <div class="news-date">Founder</div>
+          <div class="news-text"><b>Jeff Bezos</b> remains one of the largest individual shareholders, though he stepped back from CEO duties years ago and has been a steady, periodic seller of shares for personal diversification.</div>
+          <span class="news-tag info">Structure</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Structure</div>
+          <div class="news-text">Broadly institutionally held beyond Bezos's stake — Vanguard and BlackRock are among the largest institutional holders.</div>
+          <span class="news-tag info">Structure</span>
+        </div>
+      </div>
+
+      <div class="news-list" data-deepdive="META" style="display:none;">
+        <div class="news-item">
+          <div class="news-date">Founder</div>
+          <div class="news-text"><b>Mark Zuckerberg</b> retains majority voting control through Class B super-voting shares, despite holding a minority of total economic shares outstanding — similar in spirit to Alphabet's structure.</div>
+          <span class="news-tag info">Structure</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Structure</div>
+          <div class="news-text">This concentrated voting control means Zuckerberg can effectively set strategic direction (e.g., Reality Labs spending) regardless of broader shareholder sentiment.</div>
+          <span class="news-tag risk">Governance note</span>
+        </div>
+      </div>
+
+      <div class="news-list" data-deepdive="NVDA" style="display:none;">
+        <div class="news-item">
+          <div class="news-date">Founder</div>
+          <div class="news-text"><b>Jensen Huang</b> (co-founder, CEO) holds a meaningful personal stake, though not a controlling one — Nvidia does not have a dual-class share structure like Alphabet or Meta.</div>
+          <span class="news-tag info">Structure</span>
+        </div>
+        <div class="news-item">
+          <div class="news-date">Structure</div>
+          <div class="news-text">Broadly institutionally held — Vanguard and BlackRock are among the largest shareholders, consistent with Nvidia's status as one of the largest companies by market cap globally.</div>
+          <span class="news-tag info">Structure</span>
+        </div>
+      </div>
+
+      <div class="news-list dd-placeholder" data-deepdive-placeholder style="display:none;">
+        <div class="news-item"><div class="news-text">Curated ownership breakdown isn't built yet for this ticker.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="risks">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Read the risks before the ticker</h2>
+        <span class="tag">Not a complete list — do your own diligence</span>
+      </div>
+      <div class="risk-grid" data-deepdive="SPCX">
+        <div class="risk-card">
+          <h4>Extreme post-IPO volatility</h4>
+          <p>SPCX has already swung from a $225.64 intraday high to below its $135 IPO price in about six weeks. New listings — especially ones this large and this hyped — are prone to overshooting in both directions.</p>
+        </div>
+        <div class="risk-card">
+          <h4>Low public float, high insider control</h4>
+          <p>Only a portion of total shares are freely tradable; Elon Musk retains majority ownership. Small float plus concentrated control can mean outsized price moves on modest trading volume.</p>
+        </div>
+        <div class="risk-card">
+          <h4>Lockup expirations and unlocks</h4>
+          <p>Scheduled unlocks (including one tied to the first earnings report) release more insider shares into the market over time, which can pressure the price as supply increases.</p>
+        </div>
+        <div class="risk-card">
+          <h4>Execution risk in hardware</h4>
+          <p>Rockets are unforgiving. Starship test failures or delays, launch anomalies, or regulatory holds can move the stock quickly and are inherent to the business, not a temporary bug.</p>
+        </div>
+        <div class="risk-card">
+          <h4>Newly bundled AI segment</h4>
+          <p>The xAI acquisition folds a fast-moving, capital-intensive, and separately competitive AI business into the same stock — adding a second source of volatility and valuation uncertainty on top of aerospace.</p>
+        </div>
+        <div class="risk-card">
+          <h4>Valuation disagreement</h4>
+          <p>Independent analysts (e.g., Morningstar, pre-IPO) argued fair value was meaningfully below the IPO's target valuation. Wide analyst price-target ranges since listing reflect real disagreement about what the business is worth.</p>
+        </div>
+      </div>
+
+      <div class="risk-grid" data-deepdive="TSLA" style="display:none;">
+        <div class="risk-card">
+          <h4>Auto margin compression</h4>
+          <p>Price cuts to defend market share, combined with intensifying EV competition (especially from Chinese automakers like BYD), have squeezed automotive gross margins over the past couple years.</p>
+        </div>
+        <div class="risk-card">
+          <h4>Valuation prices in autonomy succeeding</h4>
+          <p>At roughly 30x FY30E adjusted EBITDA, a large share of the current price depends on robotaxi and Optimus succeeding on an ambitious timeline — not on the core auto business alone.</p>
+        </div>
+        <div class="risk-card">
+          <h4>Robotaxi safety &amp; regulatory risk</h4>
+          <p>Testing incidents during the expanded robotaxi rollout have drawn scrutiny; any serious safety event or regulatory setback could hit the stock hard given how central autonomy is to the bull case.</p>
+        </div>
+        <div class="risk-card">
+          <h4>Key-person concentration</h4>
+          <p>Elon Musk's attention is split across Tesla, SpaceX, xAI, and other ventures — a real governance consideration given how much of Tesla's narrative and execution is tied to him personally.</p>
+        </div>
+        <div class="risk-card">
+          <h4>Extreme analyst disagreement</h4>
+          <p>A price-target range from roughly $25 to $630+ is among the widest of any large-cap stock — a signal that even professional analysts don't agree on the fundamental value here.</p>
+        </div>
+        <div class="risk-card">
+          <h4>High historical volatility</h4>
+          <p>TSLA carries a beta near 2.0 and has moved 20%+ in a month multiple times in its history — position sizing matters more here than for a typical mega-cap.</p>
+        </div>
+      </div>
+
+      <div class="risk-grid" data-deepdive="AAPL" style="display:none;">
+        <div class="risk-card">
+          <h4>Regulatory &amp; antitrust pressure</h4>
+          <p>Ongoing app store fee disputes and antitrust scrutiny across the US, EU, and other jurisdictions could force changes to Apple's most profitable revenue streams.</p>
+        </div>
+        <div class="risk-card">
+          <h4>Maturing smartphone market</h4>
+          <p>iPhone still drives roughly half of revenue in a global market that isn't growing the way it once did — future growth depends heavily on upgrade cycles and Services attach rates.</p>
+        </div>
+        <div class="risk-card">
+          <h4>China exposure</h4>
+          <p>Greater China is a major revenue region and manufacturing base — geopolitical tension or local competition (from domestic Chinese phone makers) is a persistent risk factor.</p>
+        </div>
+        <div class="risk-card">
+          <h4>Declining segments</h4>
+          <p>Mac (-7% YoY) and Wearables (-2% YoY) are shrinking — not catastrophic on their own, but a reminder that not every part of the ecosystem is growing.</p>
+        </div>
+      </div>
+
+      <div class="risk-grid" data-deepdive="MSFT" style="display:none;">
+        <div class="risk-card">
+          <h4>Capex outpacing revenue growth</h4>
+          <p>$80-146B in projected FY2026 capital expenditures is a bet that AI infrastructure demand continues — if monetization lags, margins could compress meaningfully.</p>
+        </div>
+        <div class="risk-card">
+          <h4>Active litigation</h4>
+          <p>Securities class action filings allege misleading statements about Azure growth and Copilot functionality — an unresolved legal risk.</p>
+        </div>
+        <div class="risk-card">
+          <h4>AI product execution risk</h4>
+          <p>Reports of slower-than-hoped Copilot adoption highlight that translating AI infrastructure investment into product success isn't guaranteed.</p>
+        </div>
+      </div>
+
+      <div class="risk-grid" data-deepdive="GOOGL" style="display:none;">
+        <div class="risk-card">
+          <h4>DOJ antitrust investigation</h4>
+          <p>An ongoing search-related DOJ investigation could result in remedies affecting default search agreements (including with Apple) or other structural changes.</p>
+        </div>
+        <div class="risk-card">
+          <h4>Cloud margin pressure</h4>
+          <p>Demand for Google Cloud is outpacing capacity, forcing reliance on third-party compute — a near-term margin headwind even as the segment grows.</p>
+        </div>
+        <div class="risk-card">
+          <h4>AI-native search competition</h4>
+          <p>New AI-first search/answer products from competitors pose a long-term threat to Google's core search advertising business model.</p>
+        </div>
+        <div class="risk-card">
+          <h4>Rising capex</h4>
+          <p>The raised $195-205B 2026 capex forecast is a bet on continued AI/cloud demand — a miss here could pressure the stock similarly to peers.</p>
+        </div>
+      </div>
+
+      <div class="risk-grid" data-deepdive="AMZN" style="display:none;">
+        <div class="risk-card">
+          <h4>Heavy capex pressuring free cash flow</h4>
+          <p>~$200B planned 2026 capex has sharply reduced free cash flow and increased long-term debt — a real near-term financial tradeoff for long-term AI/AWS positioning.</p>
+        </div>
+        <div class="risk-card">
+          <h4>AI strategy uncertainty</h4>
+          <p>Reports of Amazon winding down in-house AI models and restructuring its AGI team (with layoffs) signal real uncertainty about its AI competitive positioning.</p>
+        </div>
+        <div class="risk-card">
+          <h4>Retail margin sensitivity</h4>
+          <p>Core retail margins, while improving, remain sensitive to consumer spending trends, labor costs, and logistics/tariff dynamics.</p>
+        </div>
+      </div>
+
+      <div class="risk-grid" data-deepdive="META" style="display:none;">
+        <div class="risk-card">
+          <h4>Heaviest AI capex among peers</h4>
+          <p>$125-145B planned 2026 spend is among the largest capex-to-revenue ratios of the major hyperscalers, raising the bar for what "success" needs to look like.</p>
+        </div>
+        <div class="risk-card">
+          <h4>Persistent Reality Labs losses</h4>
+          <p>The AR/VR division has lost tens of billions of dollars over multiple years with no clear profitability timeline — a long-running drag that predates the current AI cycle.</p>
+        </div>
+        <div class="risk-card">
+          <h4>Founder-controlled governance</h4>
+          <p>Zuckerberg's super-voting shares mean strategic decisions (including continued Reality Labs investment) aren't subject to normal shareholder checks.</p>
+        </div>
+        <div class="risk-card">
+          <h4>Ad-market cyclicality</h4>
+          <p>As an advertising-dependent business, Meta's revenue is more exposed to broader macroeconomic/consumer-spending cycles than subscription or infrastructure-revenue peers.</p>
+        </div>
+      </div>
+
+      <div class="risk-grid" data-deepdive="NVDA" style="display:none;">
+        <div class="risk-card">
+          <h4>Customer concentration</h4>
+          <p>A relatively small number of hyperscaler customers drive the majority of Data Center revenue — any pullback in their capex plans would hit Nvidia disproportionately.</p>
+        </div>
+        <div class="risk-card">
+          <h4>Priced for continued hypergrowth</h4>
+          <p>With 65%+ YoY revenue growth already achieved, expectations are high — any deceleration, even to still-strong growth rates, could disappoint a market pricing in more.</p>
+        </div>
+        <div class="risk-card">
+          <h4>Competitive and geopolitical risk</h4>
+          <p>Export restrictions on advanced chips to certain markets, plus growing in-house chip efforts by major customers (custom AI silicon), are long-term competitive threats.</p>
+        </div>
+      </div>
+
+      <div class="risk-grid dd-placeholder" data-deepdive-placeholder style="display:none;">
+        <div class="risk-card"><h4>Not built yet</h4><p>A curated risk breakdown isn't available for this ticker yet.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>SPCX vs. the usual ways to invest in space</h2>
+        <span class="tag">For context, not advice</span>
+      </div>
+      <div class="compare" data-deepdive="SPCX">
+        <div class="col">
+          <h4>Owning SPCX directly</h4>
+          <ul>
+            <li>Direct exposure to <b>Space</b> + <b>Connectivity</b> + <b>AI</b> in one stock</li>
+            <li>Highest single-name concentration risk</li>
+            <li>Price already reflects a lot of optimism baked in at IPO</li>
+            <li>Subject to lockups, unlocks, and thin early float</li>
+            <li>No dividend — return depends entirely on share price</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Diversified space/aerospace exposure</h4>
+          <ul>
+            <li>Space-themed ETFs spread risk across many launch, satellite, and defense names</li>
+            <li>Individual peers (e.g., Rocket Lab) offer smaller, more targeted pure-play exposure</li>
+            <li>Legacy aerospace/defense primes offer government-contract stability, less growth</li>
+            <li>Lower single-company blow-up risk, lower concentrated upside</li>
+          </ul>
+        </div>
+      </div>
+      <div class="compare" data-deepdive="TSLA" style="display:none;">
+        <div class="col">
+          <h4>Owning TSLA directly</h4>
+          <ul>
+            <li>Direct exposure to <b>Auto</b> + <b>Energy storage</b> + <b>Robotics/autonomy</b> optionality in one stock</li>
+            <li>High single-name concentration risk, high historical volatility (beta ~2.0)</li>
+            <li>Valuation already prices in significant autonomy success</li>
+            <li>Large, liquid float — no lockup/unlock overhang unlike a fresh IPO</li>
+            <li>No dividend — return depends entirely on share price</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Diversified EV/auto exposure</h4>
+          <ul>
+            <li>EV or clean-transportation ETFs spread risk across many automakers and suppliers</li>
+            <li>Legacy automakers (Ford, GM, Toyota) offer dividend income and lower volatility, less growth</li>
+            <li>Chinese EV makers (BYD, etc.) offer different geographic/regulatory exposure</li>
+            <li>Lower single-company blow-up risk, lower concentrated upside</li>
+          </ul>
+        </div>
+      </div>
+      <div class="compare" data-deepdive="AAPL" style="display:none;">
+        <div class="col">
+          <h4>Owning AAPL directly</h4>
+          <ul>
+            <li>Direct exposure to <b>iPhone</b> + <b>Services</b> + the broader hardware ecosystem</li>
+            <li>Lower concentration risk than most mega-caps — extremely large, liquid float</li>
+            <li>Pays a dividend and runs large share buybacks, unlike most growth-stage names on this page</li>
+            <li>Regulatory/antitrust risk is real but well-known and priced in over years</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Diversified tech/consumer exposure</h4>
+          <ul>
+            <li>Broad tech ETFs (QQQ, etc.) spread risk across many large-cap tech names</li>
+            <li>Consumer electronics peers (Samsung, etc.) offer different geographic exposure</li>
+            <li>Lower single-company risk, lower concentrated upside</li>
+          </ul>
+        </div>
+      </div>
+      <div class="compare" data-deepdive="MSFT" style="display:none;">
+        <div class="col">
+          <h4>Owning MSFT directly</h4>
+          <ul>
+            <li>Direct exposure to <b>Azure/cloud</b> + <b>Productivity software</b> + <b>AI (Copilot/OpenAI)</b></li>
+            <li>Lower concentration risk — large, liquid float, broadly institutionally held</li>
+            <li>Pays a dividend, unlike most of the higher-growth names on this page</li>
+            <li>Heavy AI capex commitment means near-term margin/cash-flow tradeoffs</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Diversified cloud/software exposure</h4>
+          <ul>
+            <li>Cloud-computing ETFs spread risk across multiple hyperscalers and SaaS names</li>
+            <li>Smaller pure-play cloud/software companies offer more targeted, higher-beta exposure</li>
+            <li>Lower single-company risk, lower concentrated upside</li>
+          </ul>
+        </div>
+      </div>
+      <div class="compare" data-deepdive="GOOGL" style="display:none;">
+        <div class="col">
+          <h4>Owning GOOGL directly</h4>
+          <ul>
+            <li>Direct exposure to <b>Search/advertising</b> + <b>Cloud</b> + <b>AI (Gemini)</b> + long-shot Other Bets</li>
+            <li>Lower concentration risk — large, liquid float</li>
+            <li>Dual/triple-class share structure means limited shareholder voting influence</li>
+            <li>DOJ antitrust overhang is a real, ongoing regulatory risk unique to this name</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Diversified digital-advertising/tech exposure</h4>
+          <ul>
+            <li>Broad tech/communications ETFs spread risk across ad-driven and cloud businesses</li>
+            <li>Other ad-platform names (Meta, Amazon ads) offer different exposure within the same theme</li>
+            <li>Lower single-company risk, lower concentrated upside</li>
+          </ul>
+        </div>
+      </div>
+      <div class="compare" data-deepdive="AMZN" style="display:none;">
+        <div class="col">
+          <h4>Owning AMZN directly</h4>
+          <ul>
+            <li>Direct exposure to <b>AWS</b> + <b>E-commerce retail</b> + growing <b>Advertising</b> business</li>
+            <li>Lower concentration risk — large, liquid float</li>
+            <li>No dividend — capital is reinvested into growth/capex rather than returned to shareholders</li>
+            <li>Heavy AI/logistics capex is currently compressing free cash flow</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Diversified cloud/e-commerce exposure</h4>
+          <ul>
+            <li>Broad tech or consumer-discretionary ETFs spread risk across similar business models</li>
+            <li>Other cloud providers (Microsoft, Google) offer overlapping but distinct exposure</li>
+            <li>Lower single-company risk, lower concentrated upside</li>
+          </ul>
+        </div>
+      </div>
+      <div class="compare" data-deepdive="META" style="display:none;">
+        <div class="col">
+          <h4>Owning META directly</h4>
+          <ul>
+            <li>Direct exposure to <b>Digital advertising</b> (Facebook/Instagram/WhatsApp) + <b>AI infrastructure</b> + speculative <b>Reality Labs</b></li>
+            <li>Founder-controlled voting structure (Zuckerberg's Class B shares) — less normal shareholder influence over strategy</li>
+            <li>No dividend historically tied to core strategy of reinvestment</li>
+            <li>Highest AI capex-to-revenue ratio among the mega-cap names on this page</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Diversified digital-advertising exposure</h4>
+          <ul>
+            <li>Broad tech/communications ETFs spread risk across ad-driven platforms</li>
+            <li>Other ad-platform names (Google, Amazon ads) offer different exposure within the same theme</li>
+            <li>Lower single-company risk, lower concentrated upside</li>
+          </ul>
+        </div>
+      </div>
+      <div class="compare" data-deepdive="NVDA" style="display:none;">
+        <div class="col">
+          <h4>Owning NVDA directly</h4>
+          <ul>
+            <li>Direct, concentrated exposure to <b>AI-infrastructure GPU demand</b> — the most "pure-play AI" name on this page</li>
+            <li>Highest customer-concentration risk here — a handful of hyperscalers drive most revenue</li>
+            <li>Valuation already assumes continued hypergrowth</li>
+            <li>No dividend of meaningful size — return depends entirely on continued AI capex momentum</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Diversified semiconductor/AI exposure</h4>
+          <ul>
+            <li>Semiconductor ETFs spread risk across chipmakers, equipment suppliers, and foundries</li>
+            <li>Owning the hyperscaler customers themselves (Microsoft, Amazon, Google, Meta) offers indirect AI exposure with a different risk profile</li>
+            <li>Lower single-company risk, lower concentrated upside</li>
+          </ul>
+        </div>
+      </div>
+      <div class="compare dd-placeholder" data-deepdive-placeholder style="display:none;">
+        <div class="col"><h4>Not built yet</h4><p>A curated comparison isn't available for this ticker yet.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="strategy">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Thinking about entry &amp; exit points</h2>
+        <span class="tag">Frameworks, not a signal to act on</span>
+      </div>
+      <p style="color:var(--text-dim); font-size:14px; max-width:70ch; margin-bottom:26px;">
+        Nobody — no site, no analyst, no headline — can reliably tell you the exact day to buy or sell a single stock. What disciplined investors actually do is run a decision through a repeatable process. Below is that process applied to SPCX, plus where things currently stand. This is education, not a recommendation.
+      </p>
+
+      <div class="compare" style="margin-bottom:26px;" data-deepdive="SPCX">
+        <div class="col">
+          <h4>Case for buying / adding</h4>
+          <ul>
+            <li>Stock is down <b>~49%</b> from its post-IPO intraday high, which some see as a healthier entry than IPO-day euphoria pricing</li>
+            <li>Three growth engines in one name: launch dominance, Starlink's recurring-revenue growth, and a newly bundled AI business</li>
+            <li>Heavy government demand (e.g., the recent <b>$17B</b> Space Force contract ceiling) provides a revenue floor independent of retail sentiment</li>
+            <li>Some analysts' price targets remain well above current levels, implying they see the selloff as overdone</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Case for waiting / trimming</h4>
+          <ul>
+            <li>Elevated <b>~32% short interest</b> signals real skepticism from professional investors, not just noise</li>
+            <li>Upcoming lockup unlocks mean more insider shares can hit the market and pressure price further</li>
+            <li>First earnings report as a public company is unproven — no track record yet of how management guides or delivers publicly</li>
+            <li>Independent fair-value estimates (e.g., Morningstar, pre-IPO) were well below the IPO valuation, suggesting the stock may still be pricing in a lot of optimism</li>
+            <li>Hardware risk is real and recent — an aborted Starship test already moved the stock once this month</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="compare" style="margin-bottom:26px; display:none;" data-deepdive="TSLA">
+        <div class="col">
+          <h4>Case for buying / adding</h4>
+          <ul>
+            <li>Robotaxi is live and expanding, energy storage margins are strong and growing, and the stock is well off its Dec 2025 all-time high</li>
+            <li>Consensus rating remains "Buy" with an average target implying meaningful upside from current levels</li>
+            <li>Diversified across auto, energy, and autonomy/robotics — not a single-product bet</li>
+            <li>ARK and other high-conviction investors have continued buying into recent weakness</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Case for waiting / trimming</h4>
+          <ul>
+            <li>Valuation (~30x FY30E adj. EBITDA) already assumes significant autonomy success — a lot has to go right</li>
+            <li>Auto margins remain compressed by price cuts and EV competition</li>
+            <li>Robotaxi safety incidents during testing are a real, recurring source of negative headlines</li>
+            <li>Extreme analyst target dispersion ($25-$630+) signals genuine, unresolved disagreement on fair value</li>
+            <li>High historical volatility (beta ~2.0) means larger drawdowns are more likely than with a typical mega-cap</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="compare" style="margin-bottom:26px; display:none;" data-deepdive="AAPL">
+        <div class="col">
+          <h4>Case for buying / adding</h4>
+          <ul>
+            <li>Record iPhone revenue and Services at all-time highs show the ecosystem strategy still working</li>
+            <li>Strong consensus rating with a large, liquid float and dividend/buyback support</li>
+            <li>2.5B+ device installed base is a durable moat competitors can't easily replicate</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Case for waiting / trimming</h4>
+          <ul>
+            <li>Ongoing antitrust/regulatory pressure across multiple jurisdictions could hit high-margin Services revenue</li>
+            <li>Mac and Wearables segments are shrinking, showing not every part of the ecosystem is growing</li>
+            <li>Smartphone market maturity limits how much iPhone alone can drive future growth</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="compare" style="margin-bottom:26px; display:none;" data-deepdive="MSFT">
+        <div class="col">
+          <h4>Case for buying / adding</h4>
+          <ul>
+            <li>Stock trades near its cheapest forward multiple since 2023 despite genuinely strong fundamentals</li>
+            <li>40% Azure growth and a 123%-YoY AI run-rate show real, not just narrative, momentum</li>
+            <li>$627B in commercial remaining performance obligations provides unusual revenue visibility</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Case for waiting / trimming</h4>
+          <ul>
+            <li>$80-146B in FY2026 capex is a large bet that AI monetization keeps pace</li>
+            <li>Active securities litigation over Azure/Copilot disclosures is an unresolved overhang</li>
+            <li>Reports of slower Copilot adoption raise real questions about near-term AI product-market fit</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="compare" style="margin-bottom:26px; display:none;" data-deepdive="GOOGL">
+        <div class="col">
+          <h4>Case for buying / adding</h4>
+          <ul>
+            <li>Cloud growth is accelerating even as the market has focused on capex concerns</li>
+            <li>Core search/advertising business remains highly profitable and resilient so far against AI-native competition</li>
+            <li>Consensus targets imply meaningful upside from current trading levels</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Case for waiting / trimming</h4>
+          <ul>
+            <li>DOJ antitrust investigation could force structural changes with unpredictable financial impact</li>
+            <li>Raised capex forecast ($195-205B) is pressuring near-term Cloud margins</li>
+            <li>Dual/triple-class share structure limits public shareholders' influence over strategic decisions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="compare" style="margin-bottom:26px; display:none;" data-deepdive="AMZN">
+        <div class="col">
+          <h4>Case for buying / adding</h4>
+          <ul>
+            <li>AWS just posted its fastest growth in 15 quarters — the highest-margin segment reaccelerating</li>
+            <li>North America retail margins are expanding, with the strongest unit growth since COVID</li>
+            <li>62 analysts rate it Buy with zero Sells — an unusually one-sided consensus</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Case for waiting / trimming</h4>
+          <ul>
+            <li>~$200B planned 2026 capex has sharply reduced free cash flow and raised debt levels</li>
+            <li>Reported internal AI strategy overhaul (winding down in-house models, AGI team layoffs) signals real uncertainty</li>
+            <li>Q2 earnings (Jul 30) is an immediate binary event that could swing sentiment either way</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="compare" style="margin-bottom:26px; display:none;" data-deepdive="META">
+        <div class="col">
+          <h4>Case for buying / adding</h4>
+          <ul>
+            <li>15 consecutive quarters of revenue beats is a remarkably consistent operating track record</li>
+            <li>Advertising business remains highly profitable even while funding aggressive AI investment</li>
+            <li>Average analyst targets imply substantial upside from current trading levels</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Case for waiting / trimming</h4>
+          <ul>
+            <li>Highest AI capex-to-revenue ratio among mega-cap peers ($125-145B planned for 2026)</li>
+            <li>Reality Labs continues generating large losses with no clear profitability timeline</li>
+            <li>Founder-controlled voting structure means shareholders can't check strategic spending decisions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="compare" style="margin-bottom:26px; display:none;" data-deepdive="NVDA">
+        <div class="col">
+          <h4>Case for buying / adding</h4>
+          <ul>
+            <li>Direct beneficiary of over $500B in combined 2026 AI infrastructure spending from its largest customers</li>
+            <li>65%+ YoY revenue growth with dominant market position in AI data-center GPUs</li>
+            <li>Consensus target implies roughly 59% upside — one of the largest gaps of any mega-cap</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Case for waiting / trimming</h4>
+          <ul>
+            <li>Revenue is highly concentrated among a handful of hyperscaler customers — a single pullback would hit hard</li>
+            <li>Valuation already assumes continued hypergrowth continues indefinitely</li>
+            <li>Growing in-house chip efforts by major customers are a long-term competitive threat</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="compare dd-placeholder" style="margin-bottom:26px; display:none;" data-deepdive-placeholder>
+        <div class="col"><h4>Not built yet</h4><p>A curated bull/bear breakdown isn't available for this ticker yet.</p></div>
+      </div>
+
+      <div class="section-head" style="margin-bottom:16px;">
+        <h2 style="font-size:20px;">A general process, applied to any stock</h2>
+      </div>
+      <div class="risk-grid">
+        <div class="risk-card" style="border-left-color: var(--telemetry);">
+          <h4>1. Define your thesis first</h4>
+          <p>Decide <i>why</i> you'd own it before looking at price. If the price moves but your thesis hasn't changed, that's information; if your thesis breaks, the price doesn't matter.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--telemetry);">
+          <h4>2. Size the position to the risk</h4>
+          <p>Higher-volatility or newly-listed stocks are typically sized smaller than diversified holdings within a portfolio, precisely because large swings are common early on or during uncertain periods.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--telemetry);">
+          <h4>3. Use rules, not emotion, for timing</h4>
+          <p>Approaches like dollar-cost averaging (buying fixed amounts on a schedule) or setting predefined price levels to act on remove the guesswork of trying to call an exact top or bottom.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--telemetry);">
+          <h4>4. Know your sell discipline in advance</h4>
+          <p>Common frameworks: sell if the original thesis breaks, sell a portion at a predefined profit target, or use a stop level to cap downside — decided <i>before</i> you buy, not while emotionally reacting to a drop.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--telemetry);" data-deepdive="SPCX">
+          <h4>5. Watch the specific SPCX triggers</h4>
+          <p>The near-term events likely to move this stock either way: the first earnings report, the related lockup unlock, and the rescheduled Starship test flight. Many investors wait to see how these resolve before sizing up or down.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--telemetry); display:none;" data-deepdive="TSLA">
+          <h4>5. Watch the specific TSLA triggers</h4>
+          <p>The near-term events likely to move this stock either way: quarterly delivery numbers, any robotaxi expansion or safety news, and margin trends in the earnings report. Many investors wait to see how these resolve before sizing up or down.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--telemetry); display:none;" data-deepdive="AAPL">
+          <h4>5. Watch the specific AAPL triggers</h4>
+          <p>The near-term events likely to move this stock either way: Services growth rate each quarter, any regulatory/antitrust rulings, and iPhone upgrade-cycle data. Many investors wait to see how these resolve before sizing up or down.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--telemetry); display:none;" data-deepdive="MSFT">
+          <h4>5. Watch the specific MSFT triggers</h4>
+          <p>The near-term events likely to move this stock either way: quarterly Azure growth rate, AI revenue run-rate trends, and any developments in the pending securities litigation. Many investors wait to see how these resolve before sizing up or down.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--telemetry); display:none;" data-deepdive="GOOGL">
+          <h4>5. Watch the specific GOOGL triggers</h4>
+          <p>The near-term events likely to move this stock either way: DOJ antitrust case developments, Cloud margin trends, and Gemini/AI search engagement metrics. Many investors wait to see how these resolve before sizing up or down.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--telemetry); display:none;" data-deepdive="AMZN">
+          <h4>5. Watch the specific AMZN triggers</h4>
+          <p>The near-term events likely to move this stock either way: Q2 earnings (Jul 30), AWS growth trends, and any further detail on the reported AI strategy overhaul. Many investors wait to see how these resolve before sizing up or down.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--telemetry); display:none;" data-deepdive="META">
+          <h4>5. Watch the specific META triggers</h4>
+          <p>The near-term events likely to move this stock either way: Q2 earnings (Jul 29), any updated capex guidance, and Reality Labs loss trends. Many investors wait to see how these resolve before sizing up or down.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--telemetry); display:none;" data-deepdive="NVDA">
+          <h4>5. Watch the specific NVDA triggers</h4>
+          <p>The near-term events likely to move this stock either way: the Aug 26 earnings call, any signal of hyperscaler capex softening, and export-restriction policy developments. Many investors wait to see how these resolve before sizing up or down.</p>
+        </div>
+        <div class="risk-card dd-placeholder" style="border-left-color: var(--telemetry); display:none;" data-deepdive-placeholder>
+          <h4>5. Watch the specific triggers for this ticker</h4>
+          <p>Curated trigger-watching isn't built yet for this company — check the live news feed and daily snapshot above for what's moving it right now.</p>
+        </div>
+        <div class="risk-card" style="border-left-color: var(--telemetry);">
+          <h4>6. Check the valuation, not just the chart</h4>
+          <p>A falling price isn't automatically "cheap" and a rising price isn't automatically "expensive." Compare the current market cap to revenue growth, segment performance, and peer multiples rather than reacting to the percentage move alone.</p>
+        </div>
+      </div>
+
+      <div class="disclaimer" style="margin-top:26px;">
+        <b>This is not a recommendation to buy, hold, or sell any stock.</b> I'm not a licensed financial or investment advisor, and I don't have visibility into your finances, goals, or risk tolerance. Analyst price targets and market conditions change constantly — verify current figures with your broker. If you want an actual recommendation tailored to your situation, that's a conversation for a licensed financial advisor.
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" style="border-bottom:none;">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Frequently asked questions</h2>
+        <span class="tag">Quick answers</span>
+      </div>
+      <div class="faq">
+        <details class="faq-item">
+          <summary class="faq-q">Is SpaceX stock the same as Tesla stock?</summary>
+          <div class="faq-a">No. Tesla (TSLA) and SpaceX (SPCX) are separate public companies with separate tickers, even though Elon Musk leads both. There has been speculation about a possible future merger, but as of this snapshot they trade independently.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">Can I still buy SpaceX pre-IPO shares?</summary>
+          <div class="faq-a">No — the pre-IPO/secondary-market window closed when SpaceX listed on Nasdaq on June 12, 2026. Before that date, shares were only accessible to accredited investors through private funds and secondary marketplaces at a markup. Now anyone with a brokerage account can buy SPCX directly.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">Why has the stock dropped so much since the IPO?</summary>
+          <div class="faq-a">A mix of factors: the stock priced and opened at a very high valuation relative to current earnings; early IPO euphoria faded; a Starship test flight was aborted; and rising short interest plus upcoming lockup unlocks have weighed on sentiment ahead of the company's first earnings report as a public entity.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">Does SPCX pay a dividend?</summary>
+          <div class="faq-a">No. Like most high-growth, capital-intensive companies, SpaceX is reinvesting in Starship development, Starlink expansion, and AI infrastructure rather than paying shareholders a dividend.</div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-q">Is this page financial advice?</summary>
+          <div class="faq-a">No. This is an educational summary built from public reporting, not a recommendation to buy, hold, or sell. See the disclaimer below.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="disclaimer">
+        <b>Not financial advice.</b> This page is for general, educational information only and was compiled from publicly available reporting as of late July 2026. Prices, valuations, and figures differ across data providers, are frequently delayed, and change constantly — always confirm current numbers with your broker or a live market data source before making any decision. SpaceX is a young public company with a limited trading history, high volatility, and a hardware-heavy business; do your own research and consider talking to a licensed financial advisor before investing.
+      </div>
+      <div class="foot-row">
+        <span>MISSION BOARD // BUILT FOR LOCAL VIEWING</span>
+        <span>DATA SNAPSHOT: LATE JUL 2026</span>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+
+</body>
+</html>
