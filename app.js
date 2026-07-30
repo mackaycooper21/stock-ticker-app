@@ -1250,49 +1250,65 @@
         exchange: 'Nasdaq · SPCX · Space Exploration Technologies Corp.',
         h1: 'SpaceX went<br>public. Here\'s what<br>the <span class="accent">stock</span> actually is.',
         sub: 'SpaceX completed the largest IPO in history on June 12, 2026, ending 24 years as a private company. This page is a plain-English breakdown of SPCX — the price, the business behind it, and the risks — before you decide anything.',
-        exchangeLabel: 'NASDAQ: SPCX'
+        exchangeLabel: 'NASDAQ: SPCX',
+        title: 'SPCX Stock — SpaceX Live Price, Research & Risks | Mission Board',
+        description: 'Live SPCX price, chart, and plain-English research on SpaceX\'s business, valuation, and risks since its June 2026 Nasdaq IPO.'
       },
       TSLA: {
         exchange: 'Nasdaq · TSLA · Tesla, Inc.',
         h1: 'Tesla is more<br>than cars now.<br>Here\'s the <span class="accent">whole</span> picture.',
         sub: 'Auto, energy storage, and a growing autonomy/robotics bet all trade under one ticker. This page lays out TSLA\'s segments, the current bull/bear debate, and the real risks — in plain English.',
-        exchangeLabel: 'NASDAQ: TSLA'
+        exchangeLabel: 'NASDAQ: TSLA',
+        title: 'TSLA Stock — Tesla Live Price, Research & Risks | Mission Board',
+        description: 'Live TSLA price, chart, and plain-English research on Tesla\'s auto, energy, and robotics segments, valuation, and risks.'
       },
       AAPL: {
         exchange: 'Nasdaq · AAPL · Apple Inc.',
         h1: 'iPhone still<br>drives Apple.<br>Here\'s what <span class="accent">else</span> matters.',
         sub: 'Services growth, regulatory pressure, and the next upgrade cycle all shape AAPL right now. This page breaks down what you\'d actually own and why analysts are watching what they\'re watching.',
-        exchangeLabel: 'NASDAQ: AAPL'
+        exchangeLabel: 'NASDAQ: AAPL',
+        title: 'AAPL Stock — Apple Live Price, Research & Risks | Mission Board',
+        description: 'Live AAPL price, chart, and plain-English research on Apple\'s iPhone, Services growth, and the risks facing the stock.'
       },
       MSFT: {
         exchange: 'Nasdaq · MSFT · Microsoft Corporation.',
         h1: 'Azure, AI, and<br>a huge capex bet.<br>Here\'s the <span class="accent">real</span> setup.',
         sub: 'Strong fundamentals, a stock that has still lagged in 2026 — Microsoft is a genuine case study in the market pricing capex risk ahead of proof. This page breaks down both sides.',
-        exchangeLabel: 'NASDAQ: MSFT'
+        exchangeLabel: 'NASDAQ: MSFT',
+        title: 'MSFT Stock — Microsoft Live Price, Research & Risks | Mission Board',
+        description: 'Live MSFT price, chart, and plain-English research on Microsoft\'s Azure and AI capex bet, valuation, and risks.'
       },
       GOOGL: {
         exchange: 'Nasdaq · GOOGL · Alphabet Inc.',
         h1: 'Search still pays<br>the bills. AI is<br>the <span class="accent">open</span> question.',
         sub: 'Cloud acceleration, a DOJ antitrust overhang, and rising capex — Alphabet\'s setup right now has real tension in it. This page breaks down what\'s actually driving the stock.',
-        exchangeLabel: 'NASDAQ: GOOGL'
+        exchangeLabel: 'NASDAQ: GOOGL',
+        title: 'GOOGL Stock — Alphabet Live Price, Research & Risks | Mission Board',
+        description: 'Live GOOGL price, chart, and plain-English research on Alphabet\'s Search, Cloud, and AI bet, plus antitrust risk.'
       },
       AMZN: {
         exchange: 'Nasdaq · AMZN · Amazon.com, Inc.',
         h1: 'AWS funds<br>everything else.<br>Here\'s the <span class="accent">full</span> business.',
         sub: 'Retail, advertising, and a reaccelerating AWS all live under one ticker, alongside a real AI-strategy reshuffle. This page breaks down what you\'d actually own.',
-        exchangeLabel: 'NASDAQ: AMZN'
+        exchangeLabel: 'NASDAQ: AMZN',
+        title: 'AMZN Stock — Amazon Live Price, Research & Risks | Mission Board',
+        description: 'Live AMZN price, chart, and plain-English research on Amazon\'s retail, advertising, AWS, and AI strategy.'
       },
       META: {
         exchange: 'Nasdaq · META · Meta Platforms, Inc.',
         h1: 'Ads fund the<br>AI bet. Here\'s<br>the <span class="accent">real</span> tradeoff.',
         sub: 'A dominant, highly profitable ad business is currently funding the heaviest AI capex ratio of any mega-cap here. This page breaks down both sides of that bet.',
-        exchangeLabel: 'NASDAQ: META'
+        exchangeLabel: 'NASDAQ: META',
+        title: 'META Stock — Meta Live Price, Research & Risks | Mission Board',
+        description: 'Live META price, chart, and plain-English research on Meta\'s ad business, AI capex bet, and the risks facing the stock.'
       },
       NVDA: {
         exchange: 'Nasdaq · NVDA · NVIDIA Corporation.',
         h1: 'Everyone else\'s<br>AI capex ends<br>up <span class="accent">here</span>.',
         sub: 'Nvidia is the most concentrated pure-play on AI infrastructure demand of any stock on this page — which cuts both ways. This page breaks down the setup.',
-        exchangeLabel: 'NASDAQ: NVDA'
+        exchangeLabel: 'NASDAQ: NVDA',
+        title: 'NVDA Stock — Nvidia Live Price, Research & Risks | Mission Board',
+        description: 'Live NVDA price, chart, and plain-English research on Nvidia\'s AI infrastructure demand and the risks behind it.'
       }
     };
 
@@ -1300,7 +1316,22 @@
       const c = HERO_CONTENT[ticker];
       const brandTicker = document.getElementById('brand-ticker');
       if (brandTicker) brandTicker.textContent = '// ' + ticker;
-      if (!c) return; // no curated hero copy yet for this ticker — leave existing text as-is
+
+      const pageTitle = c ? c.title : `${ticker} Stock — Live Price & Research | SPCX Mission Board`;
+      const pageDesc = c ? c.description : `Live price, chart, news, and peer comparison for ${ticker} — part of the SPCX Mission Board live stock research dashboard.`;
+      document.title = pageTitle;
+      const descEl = document.getElementById('meta-description');
+      const ogTitleEl = document.getElementById('og-title');
+      const ogDescEl = document.getElementById('og-description');
+      const twTitleEl = document.getElementById('twitter-title');
+      const twDescEl = document.getElementById('twitter-description');
+      if (descEl) descEl.setAttribute('content', pageDesc);
+      if (ogTitleEl) ogTitleEl.setAttribute('content', pageTitle);
+      if (ogDescEl) ogDescEl.setAttribute('content', pageDesc);
+      if (twTitleEl) twTitleEl.setAttribute('content', pageTitle);
+      if (twDescEl) twDescEl.setAttribute('content', pageDesc);
+
+      if (!c) return; // no curated hero copy yet for this ticker — leave existing hero text as-is
       const exEl = document.getElementById('hero-exchange');
       const h1El = document.getElementById('hero-h1');
       const subEl = document.getElementById('hero-sub');
